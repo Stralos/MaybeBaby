@@ -1,7 +1,6 @@
 "use strict";
 
 var path = require("path");
-var FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin');
 
 
 var config = {
@@ -20,10 +19,7 @@ var config = {
         exclude: /node_modules/
       }
     ]
-  },
-  plugins: [
-    new FlowBabelWebpackPlugin(),
-  ],
+  }
 };
 
 module.exports = config;
