@@ -1,11 +1,9 @@
 "use strict";
-
 var path = require("path");
-
 
 var config = {
   devtool: "eval-source-map",
-  entry: path.join(__dirname, "/app/index.jsx"),
+  entry: path.join(__dirname, "/app/index.js"),
   output: {
     path: path.join(__dirname, "/dist/"),
     publicPath: path.join(__dirname, "/").replace(/\\/g, "/"),

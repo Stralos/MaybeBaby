@@ -6,8 +6,9 @@
   "scripts": {
     "build": "webpack -d",
     "watch": "webpack -w",
-    "typeCheck" : "flow",
-    "start": "npm run watch | npm run --silent typeCheck"
+    "typeCheck": "flow",
+    "update": "flow-typed install",
+    "server": "babel-node ./app/server.js"
   },
   "repository": {
     "type": "git",
@@ -30,8 +31,11 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "express": "^4.15.3",
     "flow-babel-webpack-plugin": "^1.0.1",
     "flow-bin": "^0.47.0",
+    "flow-typed": "^2.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "remove-flow-types-loader": "^1.0.0",

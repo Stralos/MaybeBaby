@@ -2,40 +2,26 @@
 import React, { Component } from "react";
 import Header from "./Header/index.jsx";
 
-//type DefaultProps = { prop: string };
-type Props        = { prop: string };
-type State        = { greeting: string, date: number, gender: string };
+type Props        = { greeting: string, date: number };
+type State        = { greeting: string };
 
 export default class Main extends Component<void, Props, State> {
 
   state = {
-    greeting: "Hello World",
-    date: 1,
-    gender: "test"
+    greeting: this.props.greeting,
   }
 
-  addNumbers(n: number, n2: number) : number {
-    return n + n2;
-  }
-
-  getGreetingText(props : Props) : string{
-    return props.prop;
+  onClick = () => {
+    console.log("Hello World!");
   }
 
   render(){
-    debugger;
-    const { date } = this.state;
-    const n : number = this.addNumbers(date, date);
-    const greeting = this.getGreetingText(this.props);
-    
+    const { greeting } = this.state;
     return (
       <div>
-        { greeting }
-        <div>
-          { date }
-        </div>
-        { n }
-        <Header greeting={"Hello World"}/>
+        <Header greeting={greeting}/>
+        { this.props.date}
+        <button onClick={this.onClick}> Click Me!</button>
       </div>
     )
   }
