@@ -8,7 +8,7 @@
     "watch": "webpack -w",
     "typeCheck": "flow",
     "update": "flow-typed install",
-    "server": "babel-node ./app/server.js"
+    "server": "nodemon ./app/server.js --exec babel-node"
   },
   "repository": {
     "type": "git",
@@ -36,8 +36,14 @@
     "flow-babel-webpack-plugin": "^1.0.1",
     "flow-bin": "^0.47.0",
     "flow-typed": "^2.1.2",
+    "history": "^4.6.1",
+    "nodemon": "^1.11.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
     "remove-flow-types-loader": "^1.0.0",
     "webpack": "^2.6.1"
   }

@@ -1,22 +1,33 @@
 // @flow
-import React from "react";
-import Main from "./components/index.jsx";
-
+import React, { Component } from "react";
+import { connect } from 'react-redux';
+import Home from "./components/Home/index.jsx"
 
 type Props = { greeting: string, date: number };
 
-const Index = (props : Props) => {
-  return(
-    <html>
-    <head>
-      <title>Page Title</title>
-    </head>
-    <body>
-      <Main {...props}/>
-      <script src="./bundle.js"/>
-    </body>
-    </html>
-  )
+class Index extends Component<void, Props, void> {
+  render() {
+    return(
+      <html>
+      <head>
+        <title>Page Title</title>
+      </head>
+      <body>
+        <Home {...this.props}/>
+        <script dangerouslySetInnerHTML={{
+          __html: "window.__PRELOADED_STATE__=" + JSON.stringify(this.props).replace(/</g, '\\u003c')
+        }}/>
+        <script src="./bundle.js"/>
+      </body>
+      </html>
+    )
+  }
 }
 
-export default Index
+const mapSateToProps = (state) : Props => Object.assign({}, {
+  greeting: state.greeting,
+  date: state.date
+});
+export default connect(mapSateToProps)(Index);
+
+
