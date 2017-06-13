@@ -1,12 +1,34 @@
 // @flow
-import React from "react";
-import Index from "./index.jsx";
+import React, { Component } from "react";
+import {withRouter, Route } from "react-router-dom"
+import { connect } from "react-redux"
+import Home from "./components/Home/index.jsx";
+import Contacts from "./components/Contacts/index.jsx";
+import Services from "./components/Services/index.jsx";
 
-const App = (props) => {
-  return (
-      <Index/>
-  )
-};
+type Props = {
+  greeting: string,
+  date: number
+}
 
-export default App;
+class App extends Component<void, Props, void> {
+  render(){
+    debugger;
+    return (
+      <div>
+        <Route exact={true} path={"/"} component={Home}/>
+        <Route exact={true} path={"/contacts"} component={Contacts}/>
+        <Route exact={true} path={"/services"} component={Services}/>
+      </div>
+    )
+  }
+}
+
+
+const mapSateToProps = (state) : Props => {
+  return Object.assign({}, {
+    greeting: state.greeting,
+    date: state.date
+  })};
+export default withRouter(connect(mapSateToProps)(App));
 

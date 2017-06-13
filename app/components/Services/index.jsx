@@ -1,12 +1,13 @@
 // @flow
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import { Link } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom"
 
 type Props = { greeting: string, date: number };
 
 class Services extends Component<void, Props, void> {
   render() {
+    debugger;
     return(
       <div>
         <div> {this.props.greeting}</div>
@@ -25,5 +26,5 @@ const mapSateToProps = (state) : Props => {
   })};
 
 export default Services;
-//export default connect(mapSateToProps)(Services));
+//export default withRouter(connect(mapSateToProps)(Services));
 
