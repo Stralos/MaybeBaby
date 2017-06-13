@@ -16,8 +16,6 @@ export default class Main extends Component<void, Props, State> {
   }
 
   render(){
-    debugger;
-
     const { greeting } = this.state;
     return (
       <div>

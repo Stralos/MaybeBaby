@@ -13,7 +13,6 @@ type Props = {
 
 class App extends Component<void, Props, void> {
   render(){
-    debugger;
     return (
       <div>
         <Route exact={true} path={"/"} component={Home}/>

@@ -7,7 +7,6 @@ type Props = { greeting: string, date: number };
 
 class Services extends Component<void, Props, void> {
   render() {
-    debugger;
     return(
       <div>
         <div> {this.props.greeting}</div>
@@ -19,7 +18,6 @@ class Services extends Component<void, Props, void> {
 }
 
 const mapSateToProps = (state) : Props => {
-  debugger;
   return Object.assign({}, {
     greeting: state.greeting,
     date: state.date
