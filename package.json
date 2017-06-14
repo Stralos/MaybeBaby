@@ -8,7 +8,8 @@
     "watch": "webpack -w",
     "typeCheck": "flow",
     "update": "flow-typed install",
-    "server": "nodemon ./app/server.js --exec babel-node"
+    "server": "nodemon ./app/server.js --exec babel-node",
+    "start": "npm run watch & npm run server"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,6 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
-    "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
     "remove-flow-types-loader": "^1.0.0",
