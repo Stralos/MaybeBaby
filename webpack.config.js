@@ -1,5 +1,7 @@
 "use strict";
 var path = require("path");
+var FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
+
 
 var config = {
   devtool: "eval-source-map",
@@ -17,7 +19,20 @@ var config = {
         exclude: /node_modules/
       }
     ]
-  }
+  },
+  plugins: [
+    new FlowStatusWebpackPlugin({
+      onError: function(stdout) {
+        console.log(stdout)
+      },
+      onSuccess: function(stdout){
+        console.log(stdout)
+      },
+      restartFlow: false,
+      failOnError: true
+    })
+  ]
+
 };
 
 module.exports = config;
