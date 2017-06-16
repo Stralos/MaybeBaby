@@ -2,7 +2,6 @@
 var path = require("path");
 var FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
 
-
 var config = {
   devtool: "eval-source-map",
   entry: path.join(__dirname, "/app/index.js"),
@@ -29,11 +28,11 @@ var config = {
         console.log(stdout)
       },
       restartFlow: false,
-      failOnError: true
+      failOnError: true,
+      binaryPath: './node_modules/.bin/flow'
     })
   ]
 
 };
 
 module.exports = config;
-//https://www.npmjs.com/package/flow-babel-webpack-plugin
