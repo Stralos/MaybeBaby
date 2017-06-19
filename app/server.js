@@ -1,4 +1,4 @@
-// @flow
+
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
@@ -42,6 +42,8 @@ function renderFullPage(html, preloadedState) {
     <!doctype html>
     <html>
       <head>
+      <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+
         <title>Redux Universal Example</title>
       </head>
       <body>
