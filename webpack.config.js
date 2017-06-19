@@ -10,6 +10,9 @@ var config = {
     publicPath: path.join(__dirname, "/").replace(/\\/g, "/"),
     filename: "bundle.js"
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     loaders: [
       {
