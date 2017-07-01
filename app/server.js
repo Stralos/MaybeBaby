@@ -5,45 +5,52 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from "react-router-dom";
 import { createStore } from 'redux';
 import {Provider} from 'react-redux';
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
 import App from "./app.jsx";
 
 const app = express();
 
 app.use(express.static('dist'));
 app.all('*', (request, response) => {
-  console.log(request.url)
   const props = {
     greeting: "Hello World!",
     date: 1
   }
 
-  const store = createStore((state) => {return state}, props)
-
+  const store = createStore((state) => {return state}, props);
   const context = {};
-  const html = renderToString(
-    <Provider store={store}>
-      <StaticRouter location={request.url} context={context}>
-        <App/>
-      </StaticRouter>
-    </Provider>
-  )
+
+  const sheet = new ServerStyleSheet();
+
+  const application = sheet.collectStyles(
+    <StyleSheetManager sheet={sheet.instance}>
+      <Provider store={store}>
+        <StaticRouter location={request.url} context={context}>
+          <App/>
+        </StaticRouter>
+      </Provider>
+    </StyleSheetManager>
+  );
+
+  const html = renderToString(application);
+  const css = sheet.getStyleTags();
+
 
   if (context.url) {
-    console.log(context);
     // Somewhere a `<Redirect>` was rendered
     response.redirect(301, context.url);
   } else {
-    response.send(renderFullPage(html, store.getState()));
+    response.send(renderFullPage(html, store.getState(), css));
   }
 });
 
-function renderFullPage(html, preloadedState) {
+function renderFullPage(html, preloadedState, styleTags) {
   return `
     <!doctype html>
     <html>
       <head>
-      <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
-
+        <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+        ${styleTags}
         <title>Redux Universal Example</title>
       </head>
       <body>

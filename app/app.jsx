@@ -4,7 +4,7 @@ import {withRouter, Route } from "react-router-dom"
 import { connect } from "react-redux"
 import Home from "./components/Home";
 import Contacts from "./components/Contacts";
-import Services from "./components/Services";
+import Services from "./components/Services/index";
 
 type Props = {
   greeting: string,
