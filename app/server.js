@@ -5,7 +5,7 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from "react-router-dom";
 import { createStore } from 'redux';
 import {Provider} from 'react-redux';
-import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
+import { ServerStyleSheet } from 'styled-components'
 import App from "./app.jsx";
 
 const app = express();
@@ -16,25 +16,18 @@ app.all('*', (request, response) => {
     greeting: "Hello World!",
     date: 1
   }
-
   const store = createStore((state) => {return state}, props);
   const context = {};
-
   const sheet = new ServerStyleSheet();
-
   const application = sheet.collectStyles(
-    <StyleSheetManager sheet={sheet.instance}>
-      <Provider store={store}>
-        <StaticRouter location={request.url} context={context}>
-          <App/>
-        </StaticRouter>
-      </Provider>
-    </StyleSheetManager>
+    <Provider store={store}>
+      <StaticRouter location={request.url} context={context}>
+        <App/>
+      </StaticRouter>
+    </Provider>
   );
-
   const html = renderToString(application);
   const css = sheet.getStyleTags();
-
 
   if (context.url) {
     // Somewhere a `<Redirect>` was rendered
@@ -65,7 +58,6 @@ function renderFullPage(html, preloadedState, styleTags) {
     </html>
     `
 }
-
 
 const PORT = 3000;
 
