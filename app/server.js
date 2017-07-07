@@ -20,11 +20,11 @@ app.all('*', (request, response) => {
   const context = {};
   const sheet = new ServerStyleSheet();
   const application = sheet.collectStyles(
-    <Provider store={store}>
-      <StaticRouter location={request.url} context={context}>
+    <StaticRouter location={request.url} context={context}>
+      <Provider store={store}>
         <App/>
-      </StaticRouter>
-    </Provider>
+      </Provider>
+    </StaticRouter>
   );
   const html = renderToString(application);
   const css = sheet.getStyleTags();

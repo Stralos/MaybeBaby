@@ -14,9 +14,10 @@ delete window.__PRELOADED_STATE__
 const store = createStore((state) => {return state}, state)
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
+  <BrowserRouter>
+    <Provider store={store}>
       <App />
-    </BrowserRouter>
-  </Provider>, document.getElementById("root")
+    </Provider>
+  </BrowserRouter>
+  , document.getElementById("root")
 );
