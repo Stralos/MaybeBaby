@@ -46,9 +46,9 @@ class App extends Component {
 }
 
 
-const mapSateToProps = (state : Props) => {
+const mapSateToProps = (state : Props) : Props=> {
   return Object.assign({}, {
-    greeting: state,
+    greeting: state.greeting,
     date: state.date
   })};
 export default withRouter(connect(mapSateToProps)(App));
