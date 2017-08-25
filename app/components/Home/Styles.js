@@ -10,4 +10,4 @@ export const Header = styled.h2`
   font-size: 1em;
   text-align: left;
   color: hotpink;
-`
+`;

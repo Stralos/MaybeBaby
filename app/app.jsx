@@ -52,4 +52,3 @@ const mapSateToProps = (state : Props) : Props=> {
     date: state.date
   })};
 export default withRouter(connect(mapSateToProps)(App));
-
