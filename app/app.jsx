@@ -1,20 +1,20 @@
 // @flow
-import React, { Component } from "react";
-import {withRouter, Route, NavLink } from "react-router-dom"
-import { connect } from "react-redux"
-import Home from "./components/Home";
-import Contacts from "./components/Contacts";
-import Services from "./components/Services";
+import React from 'react';
 import styled from 'styled-components';
+import { withRouter, Route, NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+import Home from './components/Home';
+import Contacts from './components/Contacts';
+import Services from './components/Services';
 
 type Props = {
   greeting: string,
   date: number
 }
 
-const rando = "active";
+const rando = 'active';
 const StyledNavLink = styled(NavLink).attrs({
-  activeClassName: rando
+  activeClassName: rando,
 })`
   color: palevioletred;
   display: block;
@@ -26,29 +26,24 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `;
 
-class App extends Component {
-  props: Props
-
-  render(){
-    return (
-      <div>
-        <nav>
-          <StyledNavLink exact={true} to="/"> Home </StyledNavLink>
-          <StyledNavLink exact={true} to="/contacts"> Contacts </StyledNavLink>
-          <StyledNavLink exact={true} to="/services"> Services </StyledNavLink>
-        </nav>
-        <Route exact={true} path={"/"} render={ () => <Home {...this.props}/>}/>
-        <Route exact={true} path={"/contacts"} component={Contacts}/>
-        <Route exact={true} path={"/services"} render={ () => <Services/>}/>
-      </div>
-    )
-  }
-}
+const App = (props: Props) => {
+  return (
+    <div>
+      <nav>
+        <StyledNavLink exact to="/"> Home </StyledNavLink>
+        <StyledNavLink exact to="/contacts"> Contacts </StyledNavLink>
+        <StyledNavLink exact to="/services"> Services </StyledNavLink>
+      </nav>
+      <Route exact path={'/'} render={() => <Home {...props} />} />
+      <Route exact path={'/contacts'} component={Contacts} />
+      <Route exact path={'/services'} render={() => <Services />} />
+    </div>
+  );
+};
 
 
-const mapSateToProps = (state : Props) : Props=> {
-  return Object.assign({}, {
-    greeting: state.greeting,
-    date: state.date
-  })};
+const mapSateToProps = (state : Props) : Props => Object.assign({}, {
+  greeting: state.greeting,
+  date: state.date,
+});
 export default withRouter(connect(mapSateToProps)(App));
