@@ -45,7 +45,6 @@ function renderFullPage(html, preloadedState, styleTags) {
     <!doctype html>
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
         ${styleTags}
         <title>Redux Universal Example</title>
       </head>
