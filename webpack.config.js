@@ -1,6 +1,7 @@
 /* eslint no-console: 0 */
 const path = require('path');
 const FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
+const webpack = require('webpack');
 
 const config = {
   devtool: 'eval-source-map',
@@ -44,6 +45,7 @@ const config = {
       failOnError: true,
       binaryPath: './node_modules/.bin/flow',
     }),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
 };
 
