@@ -1,4 +1,5 @@
-const path = require("path");
+/* eslint no-console: 0 */
+const path = require('path');
 const FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
 
 const config = {
@@ -21,7 +22,7 @@ const config = {
         loader: 'eslint-loader',
         options: {
           failOnWarning: false,
-          failOnError: true,
+          failOnError: false,
         },
       },
       {

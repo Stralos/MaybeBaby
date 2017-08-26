@@ -1,3 +1,6 @@
+/* eslint react/jsx-filename-extension: 0 */
+/* eslint no-use-before-define: 0 */
+/* eslint no-console: 0 */
 
 import express from 'express';
 import React from 'react';
@@ -6,7 +9,7 @@ import { StaticRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { ServerStyleSheet } from 'styled-components';
-import App from './app.jsx';
+import App from './app';
 
 const app = express();
 
