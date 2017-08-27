@@ -61,7 +61,6 @@
     "eslint-plugin-react": "^7.3.0",
     "flow-status-webpack-plugin": "^0.1.7",
     "jest": "^20.0.4",
-    "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1"
   }
 }
