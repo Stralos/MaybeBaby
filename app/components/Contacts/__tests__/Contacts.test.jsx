@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import Contacts from './Contacts';
+import Contacts from '../Contacts';
 
 describe('A suite', () => {
   it('should render without throwing an error', () => {

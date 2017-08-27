@@ -3,7 +3,7 @@ import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 
-import Contacts from './Contacts';
+import Contacts from '../Contacts';
 
 it('renders correctly', () => {
   const tree = renderer.create(
