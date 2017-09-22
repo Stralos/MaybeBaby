@@ -1,5 +1,5 @@
-// flow-typed signature: 1e4577f4ead8bf5f0adbdaa1a243c60a
-// flow-typed version: ef2fdb0770/express_v4.x.x/flow_>=v0.32.x
+// flow-typed signature: bbd4db601e3e3894a83139cf4e27ec5d
+// flow-typed version: d0664d9197/express_v4.x.x/flow_>=v0.32.x
 
 import type { Server } from 'http';
 import type { Socket } from 'net';
@@ -102,8 +102,8 @@ declare class express$Response extends http$ServerResponse mixins express$Reques
 
 declare type express$NextFunction = (err?: ?Error | 'route') => mixed;
 declare type express$Middleware =
-  ((req: express$Request, res: express$Response, next: express$NextFunction) => mixed) |
-  ((error: ?Error, req: express$Request, res: express$Response, next: express$NextFunction) => mixed);
+  ((req: $Subtype<express$Request>, res: express$Response, next: express$NextFunction) => mixed) |
+  ((error: ?Error, req: $Subtype<express$Request>, res: express$Response, next: express$NextFunction) => mixed);
 declare interface express$RouteMethodType<T> {
   (middleware: express$Middleware): T;
   (...middleware: Array<express$Middleware>): T;
