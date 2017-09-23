@@ -12,7 +12,7 @@ type Props = {
   something: string,
 }
 
-export default class Home extends Component<Props>{
+export default class Home extends Component<Props> {
   onClick = () => {
     console.log('Hello World! I love you');
   }

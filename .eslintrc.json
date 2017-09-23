@@ -2,7 +2,6 @@
   "parser": "babel-eslint",
   "extends": [
     "airbnb",
-    "airbnb-flow",
     "plugin:flowtype/recommended"
   ],
   "plugins": [
@@ -15,7 +14,9 @@
   "rules": {
     "flowtype-errors/show-errors": 2,
     "arrow-body-style": 0,
-    "jsx-a11y/href-no-hash": 0
+    "jsx-a11y/href-no-hash": 0,
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0
   },
   "env": {
     "jest": true
