@@ -8,8 +8,8 @@ import Contacts from './components/Contacts';
 import Services from './components/Services';
 
 type Props = {
-  greeting: string,
-  date: number
+  +greeting: string,
+  +date: number
 }
 
 const rando = 'active';
@@ -42,7 +42,7 @@ const App = (props: Props) => {
 };
 
 
-const mapSateToProps = (state : Props) : Props => Object.assign({}, {
+const mapSateToProps = (state: Props): Props => Object.assign({}, {
   greeting: state.greeting,
   date: state.date,
 });

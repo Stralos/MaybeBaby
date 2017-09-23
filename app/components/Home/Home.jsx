@@ -1,4 +1,4 @@
-// @flow
+/* @flow */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -6,18 +6,22 @@ import {
   Header,
 } from './Styles';
 
-type Props = {| greeting: string, date: number |};
-type State = {| greeting: string |};
+type Properties = {
+  +greeting: string,
+  +date: number
+}
 
-export default class Home extends Component {
-  state : State = {
+type State = {|
+  +greeting: string
+|};
+
+export default class Home extends Component<Properties, State> {
+  state = {
     greeting: this.props.greeting,
   }
   onClick = () => {
     console.log('Hello World! I love you');
   }
-
-  props: Props
 
   render() {
     const { greeting } = this.state;
@@ -28,7 +32,7 @@ export default class Home extends Component {
         </Title>
         <Header>
         I am header !
-       </Header>
+        </Header>
         { greeting }
         { this.props.date}
         <button onClick={this.onClick}> Click Me!</button>

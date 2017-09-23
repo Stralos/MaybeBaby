@@ -10,7 +10,8 @@
     "server": "nodemon ./app/server.js --exec babel-node",
     "start": "npm run watch & npm run server",
     "flow": "flow status",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint app"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,8 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-flowtype-errors": "^3.3.1",
     "express": "^4.15.4",
     "flow-babel-webpack-plugin": "^1.1.0",
     "flow-bin": "^0.55.0",
