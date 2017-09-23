@@ -9,7 +9,6 @@ import {
 type Props = {
   +greeting: string,
   +date: number,
-  something: string,
 }
 
 export default class Home extends Component<Props> {
@@ -18,7 +17,7 @@ export default class Home extends Component<Props> {
   }
 
   render() {
-    const { greeting, date, something } = this.props;
+    const { greeting } = this.props;
 
     return (
       <div>
