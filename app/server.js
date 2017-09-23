@@ -18,6 +18,11 @@ app.all('*', (request, response) => {
   const props = {
     greeting: 'Hello World!',
     date: 1,
+    socialMedia: {
+      facebook: 'http://www.facebook.com',
+      instagram: 'http://www.instagram.com',
+      twitter: 'http://twitter.com',
+    },
   };
   const store = createStore(state => state, props);
   const context = {};
@@ -48,7 +53,7 @@ function renderFullPage(html, preloadedState, styleTags) {
         ${styleTags}
         <title>Redux Universal Example</title>
       </head>
-      <body>
+      <body style="background-color: black">
         <div id="root">${html}</div>
         <script>
           // WARNING: See the following for security issues around embedding JSON in HTML:
