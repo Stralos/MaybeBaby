@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 type Props = {
-  +type: string
+  +type?: string
 }
 
 const SocialMediaIcon = styled.span`
