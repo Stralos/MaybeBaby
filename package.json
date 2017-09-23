@@ -11,7 +11,7 @@
     "start": "npm run watch & npm run server",
     "flow": "flow status",
     "test": "jest",
-    "lint": "eslint app"
+    "lint": "eslint --ext .jsx --ext .js app/"
   },
   "repository": {
     "type": "git",

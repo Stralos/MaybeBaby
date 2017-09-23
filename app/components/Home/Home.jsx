@@ -6,25 +6,20 @@ import {
   Header,
 } from './Styles';
 
-type Properties = {
+type Props = {
   +greeting: string,
-  +date: number
+  +date: number,
+  something: string,
 }
 
-type State = {|
-  +greeting: string
-|};
-
-export default class Home extends Component<Properties, State> {
-  state = {
-    greeting: this.props.greeting,
-  }
+export default class Home extends Component<Props>{
   onClick = () => {
     console.log('Hello World! I love you');
   }
 
   render() {
-    const { greeting } = this.state;
+    const { greeting, date, something } = this.props;
+
     return (
       <div>
         <Title>
@@ -34,7 +29,6 @@ export default class Home extends Component<Properties, State> {
         I am header !
         </Header>
         { greeting }
-        { this.props.date}
         <button onClick={this.onClick}> Click Me!</button>
         <Link to="/services"> Services!</Link>
         <Link to="/contacts"> Contacts!</Link>
