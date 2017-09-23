@@ -9,3 +9,4 @@
 
 [options]
 module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/app/components/\1'
+module.name_mapper='^containers\/\(.*\)$' -> '<PROJECT_ROOT>/app/containers/\1'
