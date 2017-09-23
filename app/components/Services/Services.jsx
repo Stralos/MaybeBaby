@@ -2,11 +2,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
-import type { Connector } from 'react-redux';
+import type { Connector, MapStateToProps } from 'react-redux';
 
 type Props = { greeting: string, date: number };
 
-const Services = (props : Props) => {
+const Services = (props: Props) => {
   const { greeting, date } = props;
   return (
     <div>
@@ -17,11 +17,11 @@ const Services = (props : Props) => {
   );
 };
 
-const mapSateToProps = state => Object.assign({}, {
-  date: state.date,
+const mapSateToProps: MapStateToProps<Props, {}, {}> = state => Object.assign({}, {
   greeting: state.greeting,
+  date: state.date,
 });
 
-const connector : Connector<{}, Props> = connect(mapSateToProps);
+const connector : Connector<{}, Props> = connect(mapSateToProps, {});
 
 export default withRouter(connector(Services));

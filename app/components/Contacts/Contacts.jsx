@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-export default class Contacts extends Component {
+export default class Contacts extends Component<{}> {
   onClick = () => {
     console.log('My Phone number is 862322479');
   }
