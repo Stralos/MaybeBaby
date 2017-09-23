@@ -1,18 +1,28 @@
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb"],
+  "extends": [
+    "airbnb", 
+    "plugin:flowtype/recommended"
+  ],
   "plugins": [
     "react",
     "import",
-    "jsx-a11y"
+    "jsx-a11y",
+    "flowtype",
+    "flowtype-errors" 
   ],
   "rules": {
-    "arrow-body-style": 0    
+    "flowtype-errors/show-errors": 2,
+    "arrow-body-style": 0,
+    "jsx-a11y/href-no-hash": 0
   },
   "env": {
     "jest": true
   },
   "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    },
     "import/resolver": {
       "babel-module": {}
     }
