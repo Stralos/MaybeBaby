@@ -8,7 +8,7 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { ServerStyleSheet } from 'styled-components';
+import { ServerStyleSheet, ThemeProvider } from 'styled-components';
 import App from './app';
 
 const app = express();
@@ -28,11 +28,13 @@ app.all('*', (request, response) => {
   const context = {};
   const sheet = new ServerStyleSheet();
   const application = sheet.collectStyles(
-    <StaticRouter location={request.url} context={context}>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </StaticRouter>,
+    <Provider store={store}>
+      <StaticRouter location={request.url} context={context}>
+        <ThemeProvider theme={{ color: 'white' }}>
+          <App />
+        </ThemeProvider>
+      </StaticRouter>
+    </Provider>,
   );
   const html = renderToString(application);
   const css = sheet.getStyleTags();
