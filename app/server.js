@@ -47,14 +47,18 @@ app.all('*', (request, response) => {
   }
 });
 
-function renderFullPage(html, preloadedState, styleTags) {
+function renderFullPage(html, preloadedState, styleTags, canIndex = true) {
+  const indexTag = canIndex ?
+    '<meta name="robots" content="noindex, nofollow">' :
+    '';
+
   return `
     <!doctype html>
     <html>
       <head>
-        ${styleTags}
-        <meta name="robots" content="noindex, nofollow">
         <title>Redux Universal Example</title>
+        ${styleTags}
+        ${indexTag}
       </head>
       <body style="background-color: black">
         <div id="root">${html}</div>
