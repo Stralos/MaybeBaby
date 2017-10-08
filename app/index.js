@@ -19,12 +19,46 @@ delete window.__PRELOADED_STATE__;
 const store = createStore(state => state, preLoadedState);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
+  <BrowserRouter>
+    <Provider store={store}>
       <ThemeProvider theme={{ color: 'white' }}>
         <App />
       </ThemeProvider>
-    </BrowserRouter>
-  </Provider>
+    </Provider>
+  </BrowserRouter>
   , document.getElementById('root'),
 );
+
+
+const urlToIndex = {
+  '/': true,
+};
+
+const changeIndex = (element) => {
+  try {
+    if (element.target.hostname !== window.location.hostname) {
+      return;
+    }
+    const href = element.target.getAttribute('href');
+    const shouldIndex = urlToIndex[href];
+    const robotsMetaTag = window.document.head.querySelector("meta[name='robots']");
+
+    if (shouldIndex && !robotsMetaTag) {
+      const meta = window.document.createElement('meta');
+      meta.name = 'robots';
+      meta.content = 'noindex, nofollow';
+      window.document.head.appendChild(meta);
+    }
+
+    if (!shouldIndex && robotsMetaTag) {
+      window.document.head.removeChild(robotsMetaTag);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+[...window.document.links].forEach((element) => {
+  element.addEventListener('click', changeIndex);
+});
+

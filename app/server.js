@@ -28,13 +28,13 @@ app.all('*', (request, response) => {
   const context = {};
   const sheet = new ServerStyleSheet();
   const application = sheet.collectStyles(
-    <Provider store={store}>
-      <StaticRouter location={request.url} context={context}>
+    <StaticRouter location={request.url} context={context}>
+      <Provider store={store}>
         <ThemeProvider theme={{ color: 'white' }}>
           <App />
         </ThemeProvider>
-      </StaticRouter>
-    </Provider>,
+      </Provider>
+    </StaticRouter>,
   );
   const html = renderToString(application);
   const css = sheet.getStyleTags();
@@ -53,13 +53,12 @@ function renderFullPage(html, preloadedState, styleTags) {
     <html>
       <head>
         ${styleTags}
+        <meta name="robots" content="noindex, nofollow">
         <title>Redux Universal Example</title>
       </head>
       <body style="background-color: black">
         <div id="root">${html}</div>
         <script>
-          // WARNING: See the following for security issues around embedding JSON in HTML:
-          // http://redux.js.org/docs/recipes/ServerRendering.html#security-considerations
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
         </script>
         <script src="./bundle.js"></script>
