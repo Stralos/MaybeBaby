@@ -43,14 +43,14 @@ const changeIndex = (element) => {
     const shouldIndex = urlToIndex[href];
     const robotsMetaTag = window.document.head.querySelector("meta[name='robots']");
 
-    if (shouldIndex && !robotsMetaTag) {
+    if (!shouldIndex && !robotsMetaTag) {
       const meta = window.document.createElement('meta');
       meta.name = 'robots';
       meta.content = 'noindex, nofollow';
       window.document.head.appendChild(meta);
     }
 
-    if (!shouldIndex && robotsMetaTag) {
+    if (shouldIndex && robotsMetaTag) {
       window.document.head.removeChild(robotsMetaTag);
     }
   } catch (error) {
