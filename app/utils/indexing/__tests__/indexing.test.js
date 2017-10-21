@@ -17,7 +17,7 @@ describe('Utils/indexing --', () => {
       '/': true,
       '/contacts': true,
     };
-    const url = '/test';
+    const url = '/contacts';
 
     expect(shouldBeIndexed(url, allowedUrls)).toBe(true);
   });
