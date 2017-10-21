@@ -38,9 +38,6 @@ const config = {
       onError: (stdout) => {
         console.log(stdout);
       },
-      onSuccess: (stdout) => {
-        console.log(stdout);
-      },
       restartFlow: false,
       failOnError: true,
       binaryPath: './node_modules/.bin/flow',

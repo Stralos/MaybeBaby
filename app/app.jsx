@@ -3,10 +3,11 @@ import type { Connector } from 'react-redux';
 
 import React from 'react';
 import styled from 'styled-components';
-import { withRouter, Route, NavLink } from 'react-router-dom';
+import { withRouter, Route, NavLink, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Nav from 'components/Nav';
 import SocialMediaIcon from 'components/SocialMediaIcon';
+import Services from 'components/Services';
 import Home from './containers/Home';
 
 
@@ -55,7 +56,6 @@ const SocialMedia = styled.div`
     margin: 0 12px;
   }
 `;
-// 12px
 
 
 const App = (props: Props) => {
@@ -80,7 +80,10 @@ const App = (props: Props) => {
         <StyledNavLink exact to="/v"> Our Team </StyledNavLink>
         <StyledNavLink exact to="/b"> Gallery </StyledNavLink>
       </Nav>
-      <Route exact path={'/'} render={() => <Home {...props} />} />
+      <Switch>
+        <Route exact path={'/'} component={Home} />
+        <Route exact path={'/a'} component={Services} />
+      </Switch>
     </div>
   );
 };

@@ -9,6 +9,7 @@ import { StaticRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { ServerStyleSheet, ThemeProvider } from 'styled-components';
+import { shouldBeIndexed, ALLOWED_TO_INDEX_URLS } from 'utils/indexing';
 import App from './app';
 
 const app = express();
@@ -43,7 +44,14 @@ app.all('*', (request, response) => {
     // Somewhere a `<Redirect>` was rendered
     response.redirect(301, context.url);
   } else {
-    response.send(renderFullPage(html, store.getState(), css));
+    response.send(
+      renderFullPage(
+        html,
+        store.getState(),
+        css,
+        shouldBeIndexed(request, ALLOWED_TO_INDEX_URLS),
+      ),
+    );
   }
 });
 

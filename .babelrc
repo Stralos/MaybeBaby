@@ -12,7 +12,8 @@
       "root": ["./app"],
       "alias": {
         "components": "./components",
-        "containers": "./containers"
+        "containers": "./containers",
+        "utils": "./utils"
       }
     }]
   ]

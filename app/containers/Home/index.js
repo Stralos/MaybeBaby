@@ -1,4 +1,4 @@
 // @flow
-import Home from './Home';
+import Home from './container';
 
 export default Home;
