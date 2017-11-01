@@ -6,15 +6,17 @@ import type { Connector } from 'react-redux';
 import Home from './Home';
 import type { Props } from './Home';
 
-type OwnProps = {
-  +route: string,
-}
-
 const mapSateToProps = state => Object.assign({}, {
   greeting: state.greeting,
   date: state.date,
+  products: state.products,
+  workingHours: state.workingHours,
+  address: state.address,
+  email: state.email,
+  phone: state.phone,
+  description: state.description,
 });
 
-const connector : Connector<OwnProps, Props> = connect(mapSateToProps, {});
+const connector : Connector<{}, Props> = connect(mapSateToProps, {});
 
 export default withRouter(connector(Home));

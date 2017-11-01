@@ -7,17 +7,20 @@ import Home, {
   ProductList,
   Product,
   TimeTable,
-  WorkTime,
-  ContactDetails,
   Phone,
   Email,
   Address,
 } from '../Home';
+import WorkTime from '../__components__/WorkTime';
+
 import type { Props } from '../Home';
 
 const props: Props = {
   description: 'Sarah Snips is a hairdressers and salon based in Marylebone, London.',
   products: [{ image: 'a' }, { image: 'b' }],
+  phone: '+37062322479',
+  address: 'Jono Basanaviciaus 15',
+  email: 'treatwell-salon@treatwell.com',
   workingHours: [{
     day: 'Monday',
     open: true,
@@ -81,13 +84,27 @@ describe('Home Component -- ', () => {
     expect(timeTableDOM.find(WorkTime)).toHaveLength(7);
   });
 
-  it('shoudl have contact details with email, phone and address', () => {
+  it('should have email information', () => {
     const wrapper = shallow(<Home {...props} />);
-    const contactDetailsDOM = wrapper.find(ContactDetails);
 
-    expect(contactDetailsDOM).toHaveLength(1);
-    expect(contactDetailsDOM.find(Email)).toHaveLength(1);
-    expect(contactDetailsDOM.find(Phone)).toHaveLength(1);
-    expect(contactDetailsDOM.find(Address)).toHaveLength(1);
+    const emailDOM = wrapper.find(Email);
+    expect(emailDOM).toHaveLength(1);
+    expect(emailDOM.children().text()).toEqual(props.email);
+  });
+
+  it('should have phone information', () => {
+    const wrapper = shallow(<Home {...props} />);
+
+    const phoneDOM = wrapper.find(Phone);
+    expect(phoneDOM).toHaveLength(1);
+    expect(phoneDOM.children().text()).toEqual(props.phone);
+  });
+
+  it('should have address information', () => {
+    const wrapper = shallow(<Home {...props} />);
+
+    const addressDOM = wrapper.find(Address);
+    expect(addressDOM).toHaveLength(1);
+    expect(addressDOM.children().text()).toEqual(props.address);
   });
 });

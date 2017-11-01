@@ -11,21 +11,13 @@ import { Provider } from 'react-redux';
 import { ServerStyleSheet, ThemeProvider } from 'styled-components';
 import { shouldBeIndexed, ALLOWED_TO_INDEX_URLS } from 'utils/indexing';
 import App from './app';
+import data from './placeholderStore';
 
 const app = express();
 
 app.use(express.static('dist'));
 app.all('*', (request, response) => {
-  const props = {
-    greeting: 'Hello World!',
-    date: 1,
-    socialMedia: {
-      facebook: 'http://www.facebook.com',
-      instagram: 'http://www.instagram.com',
-      twitter: 'http://twitter.com',
-    },
-  };
-  const store = createStore(state => state, props);
+  const store = createStore(state => state, data);
   const context = {};
   const sheet = new ServerStyleSheet();
   const application = sheet.collectStyles(
@@ -68,7 +60,7 @@ function renderFullPage(html, preloadedState, styleTags, canIndex = true) {
         ${styleTags}
         ${indexTag}
       </head>
-      <body style="background-color: black">
+      <body style="background-color: #333; color: #ccc">
         <div id="root">${html}</div>
         <script>
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}

@@ -2,6 +2,8 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
+import WorkTime from './__components__/WorkTime';
+
 export type Props = {
   +description: string,
   +products: Array<{|
@@ -13,20 +15,32 @@ export type Props = {
     +opensAt: string,
     +closesAt: string,
   }>,
+  +address: string,
+  +phone: string,
+  +email: string,
 }
 
 export const Description = styled.div`
-
+  margin-top: 40px;
+  margin-bottom: 40px;
 `;
 
 export const ProductList = styled.ul`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin: 0px -12px 40px -12px;
 `;
 
 export const Product = styled.li`
-
+  height: 101px;
+  background-color: #f2f2f2;
+  list-style-type: none;
+  margin: 0 12px 0 12px;
+  flex: 2;
 `;
 
 export const Contacts = styled.div`
@@ -45,20 +59,39 @@ export const Email = styled.div`
 
 `;
 export const TimeTable = styled.ul`
-
+  li {
+    margin: 2px 0;
+  }
 `;
-export const WorkTime = styled.ol`
-
+export const Header = styled.h3`
+  display: flex;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
 `;
 
 
 export default class Home extends PureComponent<Props> {
   renderProductList = () => {
     const { products } = this.props;
+    const productList = products.map((product) => {
+      const { image } = product;
+      return (
+        <Product key={image}>
+          { image }
+        </Product>
+      );
+    });
+
     return (
-      <ProductList>
-        {products.map(product => <Product key={product.image} />)}
-      </ProductList>
+      <div>
+        <Header>
+          Products we use
+        </Header>
+        <ProductList>
+          { productList }
+        </ProductList>
+      </div>
     );
   }
 
@@ -66,27 +99,39 @@ export default class Home extends PureComponent<Props> {
     const { workingHours } = this.props;
     return (
       <TimeTable>
-        { workingHours.map(time => <WorkTime key={time.day} />) }
+        { workingHours.map(time => <WorkTime {...time} key={time.day} />)}
       </TimeTable>
     );
   }
 
   renderContactDetails = () => {
+    const { address, email, phone } = this.props;
     return (
       <ContactDetails>
-        <Address />
-        <Phone />
-        <Email />
+        <Address>
+          { address }
+        </Address>
+        <Phone>
+          { phone }
+        </Phone>
+        <Email>
+          { email }
+        </Email>
       </ContactDetails>
     );
   }
 
   renderContacts = () => {
     return (
-      <Contacts>
-        {this.renderContactDetails()}
-        {this.renderTimeTable()}
-      </Contacts>
+      <div>
+        <Header>
+          Contact
+        </Header>
+        <Contacts>
+          { this.renderContactDetails() }
+          { this.renderTimeTable() }
+        </Contacts>
+      </div>
     );
   }
 
