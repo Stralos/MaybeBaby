@@ -1,3 +1,4 @@
+// @flow
 /* eslint react/jsx-filename-extension: 0 */
 /* eslint no-use-before-define: 0 */
 /* eslint no-console: 0 */
@@ -13,10 +14,10 @@ import { shouldBeIndexed, ALLOWED_TO_INDEX_URLS } from 'utils/indexing';
 import App from './app';
 import data from './placeholderStore';
 
-const app = express();
+const app: express$Application = express();
 
 app.use(express.static('dist'));
-app.all('*', (request, response) => {
+app.all('*', (request: express$Request, response: express$Response) => {
   const store = createStore(state => state, data);
   const context = {};
   const sheet = new ServerStyleSheet();
@@ -41,7 +42,7 @@ app.all('*', (request, response) => {
         html,
         store.getState(),
         css,
-        shouldBeIndexed(request, ALLOWED_TO_INDEX_URLS),
+        shouldBeIndexed(request.baseUrl, ALLOWED_TO_INDEX_URLS),
       ),
     );
   }
