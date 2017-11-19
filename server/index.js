@@ -11,8 +11,8 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { ServerStyleSheet, ThemeProvider } from 'styled-components';
 import { shouldBeIndexed, ALLOWED_TO_INDEX_URLS } from 'utils/indexing';
-import App from './app';
-import data from './placeholderStore';
+import App from 'containers/App';
+import data from '../app/placeholderStore';
 
 const app: express$Application = express();
 
@@ -58,10 +58,19 @@ function renderFullPage(html, preloadedState, styleTags, canIndex = true) {
     <html>
       <head>
         <title>Redux Universal Example</title>
-        ${styleTags}
         ${indexTag}
+        ${styleTags}
+        <style>
+          body, html {
+            margin: 0;
+            height: 100%;
+            min-height: 100%;
+            background-color: #333; 
+            color: #ccc
+          }
+        </style>
       </head>
-      <body style="background-color: #333; color: #ccc">
+      <body>
         <div id="root">${html}</div>
         <script>
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}

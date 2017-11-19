@@ -10,7 +10,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { ThemeProvider } from 'styled-components';
 import { shouldBeIndexed } from 'utils/indexing';
-import App from './app';
+import App from 'containers/App';
 
 
 // Grab the state from a global variable injected into the server-generated HTML

@@ -1,17 +1,13 @@
 // @flow
-import type { Connector } from 'react-redux';
-
 import React from 'react';
 import styled from 'styled-components';
-import { withRouter, Route, NavLink, Switch } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { Route, NavLink, Switch } from 'react-router-dom';
 import Nav from 'components/Nav';
 import SocialMediaIcon from 'components/SocialMediaIcon';
 import Services from 'components/Services';
-import Home from './containers/Home';
+import Home from 'containers/Home';
 
-
-type Props = {
+export type Props = {
   +greeting: string,
   +date: number,
   +socialMedia: {
@@ -88,17 +84,4 @@ const App = (props: Props) => {
   );
 };
 
-
-const mapSateToProps = state => Object.assign({}, {
-  greeting: state.greeting,
-  date: state.date,
-  socialMedia: {
-    facebook: state.socialMedia.facebook,
-    instagram: state.socialMedia.instagram,
-    twitter: state.socialMedia.twitter,
-  },
-});
-
-const connector : Connector<{}, Props> = connect(mapSateToProps, {});
-
-export default withRouter(connector(App));
+export default App;

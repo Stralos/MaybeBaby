@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 const config = {
   devtool: 'eval-source-map',
-  entry: path.join(__dirname, '/app/index.js'),
+  entry: path.join(__dirname, '/app/index.jsx'),
   output: {
     path: path.join(__dirname, '/dist/'),
     publicPath: path.join(__dirname, '/').replace(/\\/g, '/'),

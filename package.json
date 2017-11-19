@@ -7,7 +7,7 @@
     "build": "webpack -d",
     "watch": "webpack -w",
     "update": "flow-typed install",
-    "server": "nodemon ./app/server.js --exec babel-node",
+    "server": "nodemon ./server --exec babel-node",
     "start": "npm run watch & npm run server",
     "flow": "flow status",
     "test": "jest",
