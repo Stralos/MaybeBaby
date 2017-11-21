@@ -12,18 +12,18 @@ import { ThemeProvider } from 'styled-components';
 import { shouldBeIndexed } from 'utils/indexing';
 import App from 'containers/App';
 
+const preLoadedTheme = window.__PRELOADED_THEME__;
+delete window.__PRELOADED_THEME__;
 
-// Grab the state from a global variable injected into the server-generated HTML
 const preLoadedState = window.__PRELOADED_STATE__;
-
-// Allow the passed state to be garbage-collected
 delete window.__PRELOADED_STATE__;
+
 const store = createStore(state => state, preLoadedState);
 
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-      <ThemeProvider theme={{ color: 'white' }}>
+      <ThemeProvider theme={preLoadedTheme}>
         <App />
       </ThemeProvider>
     </Provider>

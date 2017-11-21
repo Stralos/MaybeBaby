@@ -17,14 +17,17 @@ import data from '../app/placeholderStore';
 const app: express$Application = express();
 
 app.use(express.static('dist'));
-app.all('*', (request: express$Request, response: express$Response) => {
+app.get('/*', (request: express$Request, response: express$Response) => {
   const store = createStore(state => state, data);
+  const theme = {
+    color: 'white',
+  };
   const context = {};
   const sheet = new ServerStyleSheet();
   const application = sheet.collectStyles(
     <StaticRouter location={request.url} context={context}>
       <Provider store={store}>
-        <ThemeProvider theme={{ color: 'white' }}>
+        <ThemeProvider theme={theme}>
           <App />
         </ThemeProvider>
       </Provider>
@@ -42,13 +45,14 @@ app.all('*', (request: express$Request, response: express$Response) => {
         html,
         store.getState(),
         css,
+        theme,
         shouldBeIndexed(request.baseUrl, ALLOWED_TO_INDEX_URLS),
       ),
     );
   }
 });
 
-function renderFullPage(html, preloadedState, styleTags, canIndex = true) {
+function renderFullPage(html, preloadedState, styleTags, theme, canIndex = true) {
   const indexTag = canIndex ?
     '<meta name="robots" content="noindex, nofollow">' :
     '';
@@ -60,20 +64,12 @@ function renderFullPage(html, preloadedState, styleTags, canIndex = true) {
         <title>Redux Universal Example</title>
         ${indexTag}
         ${styleTags}
-        <style>
-          body, html {
-            margin: 0;
-            height: 100%;
-            min-height: 100%;
-            background-color: #333; 
-            color: #ccc
-          }
-        </style>
       </head>
       <body>
         <div id="root">${html}</div>
         <script>
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
+          window.__PRELOADED_THEME__ = ${JSON.stringify(theme).replace(/</g, '\\u003c')}
         </script>
         <script src="./bundle.js"></script>
       </body>
