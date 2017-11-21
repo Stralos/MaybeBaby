@@ -6,7 +6,6 @@ import Nav from 'components/Nav';
 import SocialMediaIcon from 'components/SocialMediaIcon';
 import Services from 'components/Services';
 import Home from 'containers/Home';
-import getFontFamalyFromTheme from 'utils/fonts';
 
 export type Props = {
   +venueName: string,
@@ -41,6 +40,7 @@ const Header = styled.h1`
   display: flex;
   justify-content: space-between;
   color: white;
+  font-family: 'Marcellus SC';
 `;
 
 const VenueName = styled(NavLink)`
@@ -70,20 +70,14 @@ class App extends PureComponent<Props> {
     ** in the theme layer.
     ** component should only display what he is given.
     */
-
-    const f: FontFamaly = getFontFamalyFromTheme('T');
     const globalStyles = `
-      @font-face {
-        font-family: ${f.fontFamaly};
-        src: ${f.src}
-      }
       body, html {
         margin: 0;
         height: 100%;
         min-height: 100%;
         background-color: #333; 
         color: #ccc;
-        font-family: ${f.fontFamaly};
+        font-family: 'Gentium Basic';
       }
     `;
     // eslint-disable-next-line no-unused-expressions

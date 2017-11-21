@@ -65,6 +65,7 @@ export const Header = styled.h3`
   justify-content: center;
   font-size: 1.75rem;
   margin-bottom: 24px;
+  font-family: 'Marcellus SC';
 `;
 export const VenueImage = styled.img`
   max-width: 100%;

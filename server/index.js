@@ -64,6 +64,10 @@ function renderFullPage(html, preloadedState, styleTags, theme, canIndex = true)
         <title>Redux Universal Example</title>
         ${indexTag}
         ${styleTags}
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700|Marcellus+SC&subset=latin-ext');      
+          @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700');
+        </style>
       </head>
       <body>
         <div id="root">${html}</div>
