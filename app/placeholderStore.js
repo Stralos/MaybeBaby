@@ -1,4 +1,6 @@
 const data = {
+  venueName: 'Sarah\'s Day Spa',
+  image: 'http://localhost:3000/venue-image.jpeg',
   socialMedia: {
     facebook: 'http://www.facebook.com',
     instagram: 'http://www.instagram.com',
