@@ -10,12 +10,14 @@ import Home, {
   Phone,
   Email,
   Address,
+  VenueImage,
 } from '../Home';
 import WorkTime from '../__components__/WorkTime';
 
 import type { Props } from '../Home';
 
 const props: Props = {
+  image: 'venue-image.jpeg',
   description: 'Sarah Snips is a hairdressers and salon based in Marylebone, London.',
   products: [{ image: 'a' }, { image: 'b' }],
   phone: '+37062322479',
@@ -106,5 +108,12 @@ describe('Home Component -- ', () => {
     const addressDOM = wrapper.find(Address);
     expect(addressDOM).toHaveLength(1);
     expect(addressDOM.children().text()).toEqual(props.address);
+  });
+
+  it('should have a venue image displayed', () => {
+    const wrapper = shallow(<Home {...props} />);
+
+    const venueImageDOM = wrapper.find(VenueImage);
+    expect(venueImageDOM).toHaveLength(1);
   });
 });

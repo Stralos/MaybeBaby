@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import WorkTime from './__components__/WorkTime';
 
 export type Props = {
+  +image: string,
   +description: string,
   +products: Array<{|
     +image: string,
@@ -47,16 +48,12 @@ export const Contacts = styled.div`
   display: flex;
 `;
 export const ContactDetails = styled.div`
-
 `;
 export const Phone = styled.div`
-
 `;
 export const Address = styled.div`
-
 `;
 export const Email = styled.div`
-
 `;
 export const TimeTable = styled.ul`
   li {
@@ -69,7 +66,12 @@ export const Header = styled.h3`
   font-size: 1.75rem;
   margin-bottom: 24px;
 `;
-
+export const VenueImage = styled.img`
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+`;
 
 export default class Home extends PureComponent<Props> {
   renderProductList = () => {
@@ -85,6 +87,7 @@ export default class Home extends PureComponent<Props> {
 
     return (
       <div>
+
         <Header>
           Products we use
         </Header>
@@ -136,9 +139,10 @@ export default class Home extends PureComponent<Props> {
   }
 
   render() {
-    const { description } = this.props;
+    const { description, image } = this.props;
     return (
       <div>
+        <VenueImage src={image} align={'middle'} />
         <Description>
           { description }
         </Description>

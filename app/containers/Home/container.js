@@ -15,6 +15,7 @@ const mapSateToProps = state => Object.assign({}, {
   email: state.email,
   phone: state.phone,
   description: state.description,
+  image: state.image,
 });
 
 const connector : Connector<{}, Props> = connect(mapSateToProps, {});

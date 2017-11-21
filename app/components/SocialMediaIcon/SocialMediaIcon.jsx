@@ -19,7 +19,8 @@ const SocialMediaIcon = styled.a`
   }};
   color: ${(props: Props) => {
     const { theme } = props;
-    return theme ? theme.color : 'blue';
+    const color = theme ? theme.color : 'blue';
+    return color;
   }}
 `;
 
