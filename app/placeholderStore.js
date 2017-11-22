@@ -8,13 +8,13 @@ const data = {
   },
   description: 'Sarah Snips is a hairdressers and salon based in Marylebone, London. We offer a range of hair services from experienced professionals to help you achieve your perfect style, as well as a selection of beauty treatments to add that finishing touch.',
   products: [{
-    image: 'test',
+    image: 'http://localhost:3000/p1.png',
   }, {
-    image: 'asda',
+    image: 'http://localhost:3000/p2.png',
   }, {
-    image: 'asdsad',
+    image: 'http://localhost:3000/p3.png',
   }, {
-    image: 'sadasd',
+    image: 'http://localhost:3000/p4.png',
   }],
   workingHours: [{
     day: 'Monday',

@@ -42,6 +42,14 @@ export const Product = styled.li`
   list-style-type: none;
   margin: 0 12px 0 12px;
   flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const ProductImage = styled.img`
+  filter: grayscale(1);
+  max-width: calc(100% - 30px);
+  max-height: calc(100% - 26px);
 `;
 
 export const Contacts = styled.div`
@@ -81,7 +89,7 @@ export default class Home extends PureComponent<Props> {
       const { image } = product;
       return (
         <Product key={image}>
-          { image }
+          <ProductImage src={image} />
         </Product>
       );
     });
