@@ -9,7 +9,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { ThemeProvider } from 'styled-components';
-import { shouldBeIndexed } from 'utils/indexing';
 import App from 'containers/App';
 
 const preLoadedTheme = window.__PRELOADED_THEME__;
@@ -31,7 +30,7 @@ ReactDOM.render(
   , document.getElementById('root'),
 );
 
-
+/*
 const urlToIndex = {
   '/': true,
 };
@@ -63,4 +62,4 @@ const changeIndex = (element) => {
 [...window.document.links].forEach((element) => {
   element.addEventListener('click', changeIndex);
 });
-
+*/

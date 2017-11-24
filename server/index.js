@@ -11,6 +11,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { ServerStyleSheet, ThemeProvider } from 'styled-components';
 import { shouldBeIndexed, ALLOWED_TO_INDEX_URLS } from 'utils/indexing';
+import { Helmet } from 'react-helmet';
 import App from 'containers/App';
 import data from '../app/placeholderStore';
 
@@ -56,13 +57,14 @@ function renderFullPage(html, preloadedState, styleTags, theme, canIndex = true)
   const indexTag = canIndex ?
     '<meta name="robots" content="noindex, nofollow">' :
     '';
-
+  const helmet = Helmet.renderStatic();
+  //helmet.meta.toString();
   return `
     <!doctype html>
     <html>
       <head>
-        <title>Redux Universal Example</title>
-        ${indexTag}
+        ${helmet.title.toString()}
+        
         ${styleTags}
         <style>
           @import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700|Marcellus+SC&subset=latin-ext');      

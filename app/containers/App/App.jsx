@@ -2,6 +2,7 @@
 import React, { PureComponent } from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import { Route, NavLink, Switch } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import ROUTES from 'utils/routes';
 import Nav from 'components/Nav';
 import SocialMediaIcon from 'components/SocialMediaIcon';
@@ -107,6 +108,26 @@ class App extends PureComponent<Props> {
     // eslint-disable-next-line no-unused-expressions
     injectGlobal`${globalStyles}`;
   }
+  injectHtmlHead = () => {
+    const noIndexTag = () => {
+      return (
+        <Helmet>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
+      );
+    };
+    return (
+      <div>
+        <Helmet>
+          <title> Test </title>
+        </Helmet>
+        <Switch>
+          <Route exact path={ROUTES.HOME} />
+          <Route render={noIndexTag} />
+        </Switch>
+      </div>
+    );
+  }
 
   render() {
     const {
@@ -117,6 +138,7 @@ class App extends PureComponent<Props> {
     } = this.props;
     return (
       <AppStyled>
+        {this.injectHtmlHead()}
         <Header>
           <VenueName to={ROUTES.HOME}> {venueName} </VenueName>
           <SocialMedia>
