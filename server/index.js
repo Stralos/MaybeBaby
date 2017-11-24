@@ -10,7 +10,6 @@ import { StaticRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { ServerStyleSheet, ThemeProvider } from 'styled-components';
-import { shouldBeIndexed, ALLOWED_TO_INDEX_URLS } from 'utils/indexing';
 import { Helmet } from 'react-helmet';
 import App from 'containers/App';
 import data from '../app/placeholderStore';
@@ -47,24 +46,19 @@ app.get('/*', (request: express$Request, response: express$Response) => {
         store.getState(),
         css,
         theme,
-        shouldBeIndexed(request.baseUrl, ALLOWED_TO_INDEX_URLS),
       ),
     );
   }
 });
 
-function renderFullPage(html, preloadedState, styleTags, theme, canIndex = true) {
-  const indexTag = canIndex ?
-    '<meta name="robots" content="noindex, nofollow">' :
-    '';
+function renderFullPage(html, preloadedState, styleTags, theme) {
   const helmet = Helmet.renderStatic();
-  //helmet.meta.toString();
   return `
     <!doctype html>
     <html>
       <head>
         ${helmet.title.toString()}
-        
+        ${helmet.meta.toString()}
         ${styleTags}
         <style>
           @import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700|Marcellus+SC&subset=latin-ext');      
