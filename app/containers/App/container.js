@@ -10,7 +10,6 @@ const mapSateToProps = (state) => {
   return Object.assign({}, {
     venueName: state.venueName,
     greeting: state.greeting,
-    date: state.date,
     socialMedia: {
       facebook: state.socialMedia.facebook,
       instagram: state.socialMedia.instagram,

@@ -11,7 +11,6 @@ import Home from 'containers/Home';
 
 export type Props = {
   +venueName: string,
-  +date: number,
   +socialMedia: {
     +facebook: string,
     +instagram: string,
