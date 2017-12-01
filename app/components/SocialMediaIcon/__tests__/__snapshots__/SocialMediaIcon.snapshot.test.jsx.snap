@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialMediaIcon Snapshot Testing -- should render and match snapshot 1`] = `
+.c0 {
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-color: Test;
+}
+
+<a
+  className="c0"
+  type="Test"
+/>
+`;

@@ -8,19 +8,23 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import App from './app';
+import { ThemeProvider } from 'styled-components';
+import App from 'containers/App';
 
-// Grab the state from a global variable injected into the server-generated HTML
+const preLoadedTheme = window.__PRELOADED_THEME__;
+delete window.__PRELOADED_THEME__;
+
 const preLoadedState = window.__PRELOADED_STATE__;
-
-// Allow the passed state to be garbage-collected
 delete window.__PRELOADED_STATE__;
+
 const store = createStore(state => state, preLoadedState);
 
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-      <App />
+      <ThemeProvider theme={preLoadedTheme}>
+        <App />
+      </ThemeProvider>
     </Provider>
   </BrowserRouter>
   , document.getElementById('root'),

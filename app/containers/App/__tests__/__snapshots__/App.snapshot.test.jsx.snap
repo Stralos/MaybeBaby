@@ -1,0 +1,547 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component Snapshot--  renders correctly 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 -4px;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  padding: 8px 0;
+}
+
+.c4 {
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  color: white;
+}
+
+.c16 {
+  padding-left: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 28.8px;
+}
+
+.c16:before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.c17 {
+  padding-left: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 28.8px;
+}
+
+.c17:before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.c9 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.c11 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin: 0px -12px 40px -12px;
+}
+
+.c12 {
+  height: 101px;
+  background-color: #f2f2f2;
+  list-style-type: none;
+  margin: 0 12px 0 12px;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  max-width: calc(100% - 30px);
+  max-height: calc(100% - 26px);
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c15 li {
+  margin: 2px 0;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  font-family: 'Marcellus SC';
+}
+
+.c8 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.c0 {
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  margin: 0 4px;
+  padding: 4px 8px;
+  color: #eee;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-letter-spacing: .1em;
+  -moz-letter-spacing: .1em;
+  -ms-letter-spacing: .1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.c6:hover {
+  color: #c8c8c8;
+}
+
+.c1 {
+  margin: 32px 0 24px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Marcellus SC';
+}
+
+.c2 {
+  font-family: 'Marcellus SC';
+  font-size: 40px;
+  line-height: 40px;
+  color: #eee;
+  -webkit-letter-spacing: 0.05em;
+  -moz-letter-spacing: 0.05em;
+  -ms-letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.c2:hover {
+  color: #c8c8c8;
+}
+
+.c3 {
+  font-size: 21px;
+  margin: 0 -12px;
+}
+
+.c3 > * {
+  margin: 0 12px;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c18 {
+  background: #222;
+  padding: 32px 0;
+}
+
+<div
+  className="c0"
+>
+  <div />
+  <h1
+    className="c1"
+  >
+    <a
+      aria-current="true"
+      className="c2 active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+       
+      Sarah's Day Spa
+       
+    </a>
+    <div
+      className="c3"
+    >
+      <a
+        className="c4"
+        href="http://www.facebook.com"
+      >
+         F 
+      </a>
+      <a
+        className="c4"
+        href="http://twitter.com"
+      >
+         T
+      </a>
+      <a
+        className="c4"
+        href="http://www.instagram.com"
+      >
+         I
+      </a>
+    </div>
+  </h1>
+  <div
+    className="c5"
+  >
+    <a
+      aria-current="true"
+      className="c6 active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+       Home 
+    </a>
+    <a
+      aria-current={false}
+      className="c6"
+      href="/services"
+      onClick={[Function]}
+      style={undefined}
+    >
+       Service & Prices 
+    </a>
+    <a
+      aria-current={false}
+      className="c6"
+      href="/team"
+      onClick={[Function]}
+      style={undefined}
+    >
+       Our Team 
+    </a>
+    <a
+      aria-current={false}
+      className="c6"
+      href="/gallery"
+      onClick={[Function]}
+      style={undefined}
+    >
+       Gallery 
+    </a>
+    <a
+      aria-current={false}
+      className="c6"
+      href="/#contact"
+      onClick={[Function]}
+      style={undefined}
+    >
+       Contact 
+    </a>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      <img
+        className="c8"
+        src="http://localhost:3000/venue-image.jpeg"
+      />
+      <div
+        className="c9"
+      >
+        Sarah Snips is a hairdressers and salon based in Marylebone, London. We offer a range of hair services from experienced professionals to help you achieve your perfect style, as well as a selection of beauty treatments to add that finishing touch.
+      </div>
+      <div>
+        <h3
+          className="c10"
+        >
+          Products we use
+        </h3>
+        <ul
+          className="c11"
+        >
+          <li
+            className="c12"
+          >
+            <img
+              className="c13"
+              src="http://localhost:3000/p1.png"
+            />
+          </li>
+          <li
+            className="c12"
+          >
+            <img
+              className="c13"
+              src="http://localhost:3000/p2.png"
+            />
+          </li>
+          <li
+            className="c12"
+          >
+            <img
+              className="c13"
+              src="http://localhost:3000/p3.png"
+            />
+          </li>
+          <li
+            className="c12"
+          >
+            <img
+              className="c13"
+              src="http://localhost:3000/p4.png"
+            />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3
+          className="c10"
+        >
+          Contact
+        </h3>
+        <div
+          className="c14"
+        >
+          <div
+            className=""
+          >
+            <div
+              className=""
+            >
+              
+            </div>
+            <div
+              className=""
+            >
+              
+            </div>
+            <div
+              className=""
+            >
+              
+            </div>
+          </div>
+          <ul
+            className="c15"
+          >
+            <li
+              className="c16"
+              open={true}
+            >
+              <span
+                className=""
+              >
+                Monday
+              </span>
+              <span
+                className=""
+              >
+                08:00 - 22:00
+              </span>
+            </li>
+            <li
+              className="c16"
+              open={true}
+            >
+              <span
+                className=""
+              >
+                Tuesday
+              </span>
+              <span
+                className=""
+              >
+                08:00 - 22:00
+              </span>
+            </li>
+            <li
+              className="c16"
+              open={true}
+            >
+              <span
+                className=""
+              >
+                Thrusday
+              </span>
+              <span
+                className=""
+              >
+                08:00 - 22:00
+              </span>
+            </li>
+            <li
+              className="c16"
+              open={true}
+            >
+              <span
+                className=""
+              >
+                Wendnesday
+              </span>
+              <span
+                className=""
+              >
+                08:00 - 22:00
+              </span>
+            </li>
+            <li
+              className="c16"
+              open={true}
+            >
+              <span
+                className=""
+              >
+                Friday
+              </span>
+              <span
+                className=""
+              >
+                08:00 - 22:00
+              </span>
+            </li>
+            <li
+              className="c17"
+              open={false}
+            >
+              <span
+                className=""
+              >
+                Saturday
+              </span>
+              <span
+                className=""
+              >
+                08:00 - 22:00
+              </span>
+            </li>
+            <li
+              className="c17"
+              open={false}
+            >
+              <span
+                className=""
+              >
+                Sunday
+              </span>
+              <span
+                className=""
+              >
+                08:00 - 22:00
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    className="c18"
+  >
+    Footer
+  </footer>
+</div>
+`;

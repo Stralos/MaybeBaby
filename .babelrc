@@ -1,15 +1,19 @@
 { 
   "presets": [
-    "flow", 
     "react", 
     "es2015", 
     "stage-0"
   ],
   "plugins": [
+    ["babel-plugin-styled-components", {
+        "ssr": true
+    }],
     ["module-resolver", {
       "root": ["./app"],
       "alias": {
-        "components": "./components"
+        "components": "./components",
+        "containers": "./containers",
+        "utils": "./utils"
       }
     }]
   ]

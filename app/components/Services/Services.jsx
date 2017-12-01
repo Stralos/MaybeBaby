@@ -10,8 +10,8 @@ const Services = (props: Props) => {
   const { greeting, date } = props;
   return (
     <div>
-      <div> {greeting}</div>
-      <div> {date}</div>
+      <div style={{ color: 'white' }}> {greeting}</div>
+      <div style={{ color: 'white' }}> {date}</div>
       <Link to={'/'}> Home </Link>
     </div>
   );
