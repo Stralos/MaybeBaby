@@ -4,11 +4,11 @@
   "description": "A React.js + flow + Node.js servers side rendering mini project for learning purposes.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -d",
-    "watch": "webpack -w",
+    "build:dev": "webpack -d",
+    "watch:dev": "npm-run-all --parallel watch:dev:*",
+    "watch:dev:build": "webpack -w",
+    "watch:dev:server": "nodemon ./dist/server-bundle.js",
     "update": "flow-typed install",
-    "server": "nodemon ./server --exec babel-node",
-    "start": "npm run watch & npm run server",
     "flow": "flow status",
     "test": "jest",
     "lint": "eslint --ext .jsx --ext .js app/"
@@ -69,6 +69,7 @@
     "flow-status-webpack-plugin": "^0.1.7",
     "jest": "^21.1.0",
     "jest-styled-components": "^4.6.0",
+    "npm-run-all": "^4.1.2",
     "react-test-renderer": "^15.6.1",
     "webpack-node-externals": "^1.6.0"
   }
