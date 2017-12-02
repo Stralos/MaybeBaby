@@ -412,17 +412,17 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
             <div
               className=""
             >
-              
+              test@treatwell.co.uk
             </div>
             <div
               className=""
             >
-              
+              020 7123 4567
             </div>
             <div
               className=""
             >
-              
+              38a Lea Bridge Road &lt;br&gt; London &lt;br&gt; E5 9QD &lt;br&gt; W1T 3PE
             </div>
           </div>
           <ul
