@@ -96,7 +96,6 @@ export default class Home extends PureComponent<Props> {
 
     return (
       <div>
-
         <Header>
           Products we use
         </Header>

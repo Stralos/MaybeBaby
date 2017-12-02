@@ -1,4 +1,7 @@
 const data = {
+  phone: '020 7123 4567',
+  address: 'test@treatwell.co.uk',
+  email: '38a Lea Bridge Road <br> London <br> E5 9QD <br> W1T 3PE',
   venueName: 'Sarah\'s Day Spa',
   image: 'http://localhost:3000/venue-image.jpeg',
   socialMedia: {
@@ -53,9 +56,6 @@ const data = {
     closesAt: '22:00',
   },
   ],
-  address: '',
-  phone: '',
-  email: '',
 };
 
 export default data;
