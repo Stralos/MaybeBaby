@@ -2,7 +2,6 @@
 import { connect } from 'react-redux';
 import type { Connector } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { withTheme } from 'styled-components';
 import App from './App';
 import type { Props } from './App';
 
@@ -18,7 +17,6 @@ const mapSateToProps = (state) => {
   });
 };
 
-
 const connector : Connector<{}, Props> = connect(mapSateToProps, {});
 
-export default withTheme(withRouter(connector(App)));
+export default withRouter(connector((App)));
