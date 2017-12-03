@@ -19,13 +19,16 @@ delete window.__PRELOADED_STATE__;
 
 const store = createStore(state => state, preLoadedState);
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Provider store={store}>
-      <ThemeProvider theme={preLoadedTheme}>
-        <App />
-      </ThemeProvider>
-    </Provider>
-  </BrowserRouter>
-  , document.getElementById('root'),
-);
+const rootDOM = document.getElementById('root');
+if (rootDOM) {
+  ReactDOM.render(
+    <BrowserRouter>
+      <Provider store={store}>
+        <ThemeProvider theme={preLoadedTheme}>
+          <App />
+        </ThemeProvider>
+      </Provider>
+    </BrowserRouter>
+    , rootDOM,
+  );
+}
