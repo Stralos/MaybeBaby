@@ -11,7 +11,8 @@
     "update": "flow-typed install",
     "flow": "flow status",
     "test": "jest",
-    "lint": "eslint --ext .jsx --ext .js app/"
+    "lint": "eslint --ext .jsx --ext .js app/",
+    "lint:fix": "eslint --ext .jsx --ext .js app/ --fix"
   },
   "repository": {
     "type": "git",
@@ -58,12 +59,12 @@
     "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-styled-components": "^1.2.0",
     "enzyme": "^2.9.1",
-    "eslint": "^4.7.2",
-    "eslint-config-airbnb": "^15.1.0",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-flow": "^1.0.2",
     "eslint-import-resolver-babel-module": "^3.0.0",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.3.0",
     "flow-status-webpack-plugin": "^0.1.7",
