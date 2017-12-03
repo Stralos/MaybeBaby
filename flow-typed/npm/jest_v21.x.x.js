@@ -139,6 +139,10 @@ type EnzymeMatchersType = {
 type JestExpectType = {
   not: JestExpectType & EnzymeMatchersType,
   /**
+   * Extension for styled components testing
+   */
+  toHaveStyleRule(...args: Array<any>): void,
+  /**
    * If you have a mock function, you can use .lastCalledWith to test what
    * arguments it was last called with.
    */
@@ -242,7 +246,6 @@ type JestExpectType = {
    * with specific arguments.
    */
   toHaveBeenLastCalledWith(...args: Array<any>): void,
-  //toHaveStyleRule(...args: Array<any>): void,
   /**
    * Check that an object has a .length property and it is set to a certain
    * numeric value.
@@ -278,11 +281,7 @@ type JestExpectType = {
    * Use .toThrowErrorMatchingSnapshot to test that a function throws a error
    * matching the most recent snapshot when it is called.
    */
-  toThrowErrorMatchingSnapshot(): void,
-  /**
-   * This is an extension, to add jest-styled-components, functionallity
-   */
-  toHaveStyleRule(...args: Array<any>): void
+  toThrowErrorMatchingSnapshot(): void
 };
 
 type JestObjectType = {

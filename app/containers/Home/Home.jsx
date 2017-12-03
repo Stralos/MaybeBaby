@@ -150,7 +150,7 @@ export default class Home extends PureComponent<Props> {
     const { description, image } = this.props;
     return (
       <div>
-        <VenueImage src={image} align={'middle'} />
+        <VenueImage src={image} align="middle" />
         <Description>
           { description }
         </Description>

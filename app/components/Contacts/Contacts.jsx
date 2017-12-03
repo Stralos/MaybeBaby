@@ -11,7 +11,7 @@ export default class Contacts extends Component<{}> {
     return (
       <div>
         You can contact me by pressing this button!
-        <Link to={'/'}> Home </Link>
+        <Link to="/"> Home </Link>
         <button onClick={this.onClick}> Get my phone number</button>
       </div>
     );

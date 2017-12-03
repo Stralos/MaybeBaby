@@ -9,7 +9,6 @@ it('renders correctly', () => {
   const tree = renderer.create(
     <MemoryRouter>
       <Contacts />
-    </MemoryRouter>,
-  ).toJSON();
+    </MemoryRouter>).toJSON();
   expect(tree).toMatchSnapshot();
 });

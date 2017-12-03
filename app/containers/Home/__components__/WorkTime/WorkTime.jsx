@@ -35,7 +35,9 @@ export const Time = styled.span``;
 
 class WorkTime extends PureComponent<Props> {
   render() {
-    const { open, opensAt, closesAt, day } = this.props;
+    const {
+      open, opensAt, closesAt, day,
+    } = this.props;
     return (
       <StyledWorkTime open={open}>
         <Day>

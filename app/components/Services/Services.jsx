@@ -12,7 +12,7 @@ const Services = (props: Props) => {
     <div>
       <div style={{ color: 'white' }}> {greeting}</div>
       <div style={{ color: 'white' }}> {date}</div>
-      <Link to={'/'}> Home </Link>
+      <Link to="/"> Home </Link>
     </div>
   );
 };

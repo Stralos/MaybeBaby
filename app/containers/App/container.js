@@ -19,4 +19,4 @@ const mapSateToProps = (state) => {
 
 const connector : Connector<{}, Props> = connect(mapSateToProps, {});
 
-export default withRouter(connector((App)));
+export default withRouter(connector(App));
