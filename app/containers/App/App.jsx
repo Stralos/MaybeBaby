@@ -1,5 +1,5 @@
 // @flow
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import { Route, NavLink, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -116,7 +116,7 @@ class App extends PureComponent<Props> {
       );
     };
     return (
-      <div>
+      <Fragment>
         <Helmet>
           <title> Test </title>
         </Helmet>
@@ -124,7 +124,7 @@ class App extends PureComponent<Props> {
           <Route exact path={ROUTES.HOME} />
           <Route render={noIndexTag} />
         </Switch>
-      </div>
+      </Fragment>
     );
   }
 
