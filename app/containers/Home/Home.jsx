@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
 import WorkTime from './__components__/WorkTime';
+import Contact from './__components__/Contact';
 
 export type Props = {
   +image: string,
@@ -56,12 +57,16 @@ export const Contacts = styled.div`
   display: flex;
 `;
 export const ContactDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 `;
-export const Phone = styled.div`
+
+export const Phone = styled(Contact)`
 `;
-export const Address = styled.div`
+export const Address = styled(Contact)`
 `;
-export const Email = styled.div`
+export const Email = styled(Contact)`
 `;
 export const TimeTable = styled.ul`
   li {
@@ -119,15 +124,9 @@ export default class Home extends PureComponent<Props> {
     const { address, email, phone } = this.props;
     return (
       <ContactDetails>
-        <Address>
-          { address }
-        </Address>
-        <Phone>
-          { phone }
-        </Phone>
-        <Email>
-          { email }
-        </Email>
+        <Address lable="Address" contactInformation={address} />
+        <Phone lable="Phone" contactInformation={phone} />
+        <Email lable="Email" contactInformation={email} />
       </ContactDetails>
     );
   }
@@ -154,8 +153,8 @@ export default class Home extends PureComponent<Props> {
         <Description>
           { description }
         </Description>
-        {this.renderProductList()}
-        {this.renderContacts()}
+        { this.renderProductList() }
+        { this.renderContacts() }
       </div>
     );
   }

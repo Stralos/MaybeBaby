@@ -1,11 +1,14 @@
 /* @flow */
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, configure } from 'enzyme';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
+import Adapter from 'enzyme-adapter-react-16';
 
 import WorkTime, { Day, Time } from '../WorkTime';
 import type { Props } from '../WorkTime';
+
+configure({ adapter: new Adapter() });
 
 const getProps = (overRidenProps): Props => {
   return Object.assign({}, {

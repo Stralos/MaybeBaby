@@ -24,36 +24,6 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
   color: white;
 }
 
-.c16 {
-  padding-left: 40px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  line-height: 28.8px;
-}
-
-.c16:before {
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  content: '';
-  border-radius: 50%;
-  border: 1px solid white;
-  box-sizing: border-box;
-  background-color: white;
-}
-
 .c17 {
   padding-left: 40px;
   position: relative;
@@ -69,6 +39,36 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
 }
 
 .c17:before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.c18 {
+  padding-left: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 28.8px;
+}
+
+.c18:before {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
@@ -143,7 +143,21 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
   display: flex;
 }
 
-.c15 li {
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.c16 li {
   margin: 2px 0;
 }
 
@@ -246,7 +260,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
   flex: 1;
 }
 
-.c18 {
+.c19 {
   background: #222;
   padding: 32px 0;
 }
@@ -254,7 +268,6 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
 <div
   className="c0"
 >
-  <div />
   <h1
     className="c1"
   >
@@ -407,29 +420,59 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
           className="c14"
         >
           <div
-            className=""
+            className="c15"
           >
-            <div
-              className=""
-            >
-              test@treatwell.co.uk
+            <div>
+              <div
+                className=""
+              >
+                Address
+              </div>
+              <div
+                className=""
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "38a Lea Bridge Road <br> London <br> E5 9QD <br> W1T 3PE",
+                  }
+                }
+              />
             </div>
-            <div
-              className=""
-            >
-              020 7123 4567
+            <div>
+              <div
+                className=""
+              >
+                Phone
+              </div>
+              <div
+                className=""
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "020 7123 4567",
+                  }
+                }
+              />
             </div>
-            <div
-              className=""
-            >
-              38a Lea Bridge Road &lt;br&gt; London &lt;br&gt; E5 9QD &lt;br&gt; W1T 3PE
+            <div>
+              <div
+                className=""
+              >
+                Email
+              </div>
+              <div
+                className=""
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "test@treatwell.co.uk",
+                  }
+                }
+              />
             </div>
           </div>
           <ul
-            className="c15"
+            className="c16"
           >
             <li
-              className="c16"
+              className="c17"
               open={true}
             >
               <span
@@ -444,7 +487,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
               </span>
             </li>
             <li
-              className="c16"
+              className="c17"
               open={true}
             >
               <span
@@ -459,7 +502,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
               </span>
             </li>
             <li
-              className="c16"
+              className="c17"
               open={true}
             >
               <span
@@ -474,7 +517,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
               </span>
             </li>
             <li
-              className="c16"
+              className="c17"
               open={true}
             >
               <span
@@ -489,7 +532,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
               </span>
             </li>
             <li
-              className="c16"
+              className="c17"
               open={true}
             >
               <span
@@ -504,7 +547,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
               </span>
             </li>
             <li
-              className="c17"
+              className="c18"
               open={false}
             >
               <span
@@ -519,7 +562,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
               </span>
             </li>
             <li
-              className="c17"
+              className="c18"
               open={false}
             >
               <span
@@ -539,7 +582,7 @@ exports[`App Component Snapshot--  renders correctly 1`] = `
     </div>
   </div>
   <footer
-    className="c18"
+    className="c19"
   >
     Footer
   </footer>

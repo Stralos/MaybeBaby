@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 import Home, {
   Description,
@@ -13,8 +14,9 @@ import Home, {
   VenueImage,
 } from '../Home';
 import WorkTime from '../__components__/WorkTime';
-
 import type { Props } from '../Home';
+
+configure({ adapter: new Adapter() });
 
 const props: Props = {
   image: 'venue-image.jpeg',
@@ -89,25 +91,37 @@ describe('Home Component -- ', () => {
   it('should have email information', () => {
     const wrapper = shallow(<Home {...props} />);
 
-    const emailDOM = wrapper.find(Email);
+    const emailDOM = wrapper
+      .find(Email)
+      .find({
+        lable: 'Email',
+        contactInformation: props.email,
+      });
     expect(emailDOM).toHaveLength(1);
-    expect(emailDOM.children().text()).toEqual(props.email);
   });
 
   it('should have phone information', () => {
     const wrapper = shallow(<Home {...props} />);
 
-    const phoneDOM = wrapper.find(Phone);
+    const phoneDOM = wrapper
+      .find(Phone)
+      .find({
+        lable: 'Phone',
+        contactInformation: props.phone,
+      });
     expect(phoneDOM).toHaveLength(1);
-    expect(phoneDOM.children().text()).toEqual(props.phone);
   });
 
   it('should have address information', () => {
     const wrapper = shallow(<Home {...props} />);
 
-    const addressDOM = wrapper.find(Address);
+    const addressDOM = wrapper
+      .find(Address)
+      .find({
+        lable: 'Address',
+        contactInformation: props.address,
+      });
     expect(addressDOM).toHaveLength(1);
-    expect(addressDOM.children().text()).toEqual(props.address);
   });
 
   it('should have a venue image displayed', () => {
