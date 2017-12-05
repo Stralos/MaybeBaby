@@ -1,7 +1,5 @@
 /* @flow */
 import React from 'react';
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
@@ -10,8 +8,6 @@ import { ThemeProvider } from 'styled-components';
 import 'jest-styled-components';
 import App from '../index';
 import data from '../../../placeholderStore';
-
-configure({ adapter: new Adapter() });
 
 const props = data;
 const theme = {
