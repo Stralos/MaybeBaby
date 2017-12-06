@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Component Snapshot renders correctly 1`] = `
+<div>
+  <div
+    className=""
+  >
+    
+  </div>
+  <div
+    className=""
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+</div>
+`;
