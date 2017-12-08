@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 import ROUTES from 'utils/routes';
 import Nav from 'components/Nav';
 import SocialMediaIcon from 'components/SocialMediaIcon';
-import Services from 'components/Services';
 import Home from 'containers/Home';
 
 export type Props = {
@@ -156,7 +155,6 @@ class App extends PureComponent<Props> {
         <RouteContent>
           <Switch>
             <Route exact path={ROUTES.HOME} component={Home} />
-            <Route exact path={ROUTES.SERVICES} component={Services} />
           </Switch>
         </RouteContent>
         <Footer>

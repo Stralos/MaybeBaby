@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App Component Snapshot--  renders correctly 1`] = `
+exports[`App Component Snapshot--  should renders correctly home page 1`] = `
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
