@@ -1,6 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
+import H3 from 'components/H3';
 
 import WorkTime from './__components__/WorkTime';
 import Contact from './__components__/Contact';
@@ -73,13 +74,6 @@ export const TimeTable = styled.ul`
     margin: 2px 0;
   }
 `;
-export const Header = styled.h3`
-  display: flex;
-  justify-content: center;
-  font-size: 1.75rem;
-  margin-bottom: 24px;
-  font-family: 'Marcellus SC';
-`;
 export const VenueImage = styled.img`
   max-width: 100%;
   height: auto;
@@ -101,9 +95,9 @@ export default class Home extends PureComponent<Props> {
 
     return (
       <div>
-        <Header>
+        <H3>
           Products we use
-        </Header>
+        </H3>
         <ProductList>
           { productList }
         </ProductList>
@@ -134,9 +128,9 @@ export default class Home extends PureComponent<Props> {
   renderContacts = () => {
     return (
       <div>
-        <Header>
+        <H3>
           Contact
-        </Header>
+        </H3>
         <Contacts>
           { this.renderContactDetails() }
           { this.renderTimeTable() }

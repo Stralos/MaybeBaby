@@ -24,6 +24,20 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   color: white;
 }
 
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  font-family: 'Marcellus SC';
+}
+
 .c17 {
   padding-left: 40px;
   position: relative;
@@ -159,20 +173,6 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
 
 .c16 li {
   margin: 2px 0;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  margin-bottom: 24px;
-  font-family: 'Marcellus SC';
 }
 
 .c8 {

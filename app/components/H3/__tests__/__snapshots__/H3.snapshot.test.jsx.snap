@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`H3 Snapshot Testing -- should render and match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  font-family: 'Marcellus SC';
+}
+
+<h3
+  className="c0"
+/>
+`;
