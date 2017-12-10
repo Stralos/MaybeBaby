@@ -54,8 +54,31 @@ const data = {
     open: false,
     opensAt: '08:00',
     closesAt: '22:00',
-  },
-  ],
+  }],
+  services: [{
+    name: 'Haircuts & Hairdressing',
+    products: [{
+      productName: 'Hairwash & Finish with Olaplex Conditioning Treatment',
+    }, {
+      productName: 'Ladies Wash & Cut',
+    }, {
+      productName: 'Hairwash & Finish',
+    }, {
+      productName: 'Hairwash, Haircut & Finish',
+    }, {
+      productName: 'Hairwash, Haircut & Finish with Olaplex Conditioning Treatment',
+    }],
+  }, {
+    name: 'Keratin/ brazilian blow dry',
+    products: [{
+      productName: 'Hairwash & Finish with Olaplex Conditioning Treatment',
+    }],
+  }, {
+    name: 'Hair Colouring & Highlights',
+    products: [{
+      productName: 'Hairwash & Finish with Olaplex Conditioning Treatment',
+    }],
+  }],
 };
 
 export default data;

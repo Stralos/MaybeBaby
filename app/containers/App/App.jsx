@@ -80,6 +80,7 @@ const RouteContent = styled.div`
   flex: 1;
 `;
 const Footer = styled.footer`
+  margin-top: 40px;
   background: #222;
   padding: 32px 0;
 `;
@@ -102,6 +103,9 @@ class App extends PureComponent<Props> {
         background-color: #333; 
         color: #ccc;
         font-family: 'Gentium Basic';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.8;
       }
     `;
     // eslint-disable-next-line no-unused-expressions

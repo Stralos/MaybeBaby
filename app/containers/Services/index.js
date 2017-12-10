@@ -1,3 +1,4 @@
-import Services from './Services';
+// @flow
+import Services from './container';
 
 export default Services;
