@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App Component Snapshot--  should renders correctly home page 1`] = `
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16,7 +16,7 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   padding: 8px 0;
 }
 
-.c4 {
+.c5 {
   text-decoration: none;
   height: 24px;
   width: 24px;
@@ -24,7 +24,7 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   color: white;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,36 +36,6 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   font-size: 1.75rem;
   margin-bottom: 24px;
   font-family: 'Marcellus SC';
-}
-
-.c17 {
-  padding-left: 40px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  line-height: 28.8px;
-}
-
-.c17:before {
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  content: '';
-  border-radius: 50%;
-  border: 1px solid white;
-  box-sizing: border-box;
-  background-color: white;
 }
 
 .c18 {
@@ -95,15 +65,45 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   border-radius: 50%;
   border: 1px solid white;
   box-sizing: border-box;
+  background-color: white;
+}
+
+.c19 {
+  padding-left: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 28.8px;
+}
+
+.c19:before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
   background-color: transparent;
 }
 
-.c9 {
+.c10 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.c11 {
+.c12 {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -121,7 +121,7 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   margin: 0px -12px 40px -12px;
 }
 
-.c12 {
+.c13 {
   height: 101px;
   background-color: #f2f2f2;
   list-style-type: none;
@@ -143,21 +143,21 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   max-width: calc(100% - 30px);
   max-height: calc(100% - 26px);
 }
 
-.c14 {
+.c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c15 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -171,21 +171,24 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   justify-content: space-evenly;
 }
 
-.c16 li {
+.c17 li {
   margin: 2px 0;
 }
 
-.c8 {
+.c9 {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.c0 {
-  min-height: 100%;
+.c1 {
   margin: 0 auto;
   max-width: 980px;
+}
+
+.c0 {
+  min-height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,7 +199,7 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c7 {
   margin: 0 4px;
   padding: 4px 8px;
   color: #eee;
@@ -210,11 +213,11 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   text-transform: uppercase;
 }
 
-.c6:hover {
+.c7:hover {
   color: #c8c8c8;
 }
 
-.c1 {
+.c2 {
   margin: 32px 0 24px 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -228,7 +231,7 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   font-family: 'Marcellus SC';
 }
 
-.c2 {
+.c3 {
   font-family: 'Marcellus SC';
   font-size: 40px;
   line-height: 40px;
@@ -241,26 +244,26 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   text-decoration: none;
 }
 
-.c2:hover {
+.c3:hover {
   color: #c8c8c8;
 }
 
-.c3 {
+.c4 {
   font-size: 21px;
   margin: 0 -12px;
 }
 
-.c3 > * {
+.c4 > * {
   margin: 0 12px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c19 {
+.c20 {
   margin-top: 40px;
   background: #222;
   padding: 32px 0;
@@ -269,321 +272,325 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
 <div
   className="c0"
 >
-  <h1
+  <div
     className="c1"
   >
-    <a
-      aria-current="true"
-      className="c2 active"
-      href="/"
-      onClick={[Function]}
-      style={Object {}}
+    <h1
+      className="c2"
     >
-       
-      Sarah's Day Spa
-       
-    </a>
+      <a
+        aria-current="true"
+        className="c3 active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+         
+        Sarah's Day Spa
+         
+      </a>
+      <div
+        className="c4"
+      >
+        <a
+          className="c5"
+          href="http://www.facebook.com"
+        >
+           F 
+        </a>
+        <a
+          className="c5"
+          href="http://twitter.com"
+        >
+           T
+        </a>
+        <a
+          className="c5"
+          href="http://www.instagram.com"
+        >
+           I
+        </a>
+      </div>
+    </h1>
     <div
-      className="c3"
+      className="c6"
     >
       <a
-        className="c4"
-        href="http://www.facebook.com"
+        aria-current="true"
+        className="c7 active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
       >
-         F 
+         Home 
       </a>
       <a
-        className="c4"
-        href="http://twitter.com"
+        aria-current={false}
+        className="c7"
+        href="/services"
+        onClick={[Function]}
+        style={undefined}
       >
-         T
+         Service & Prices 
       </a>
       <a
-        className="c4"
-        href="http://www.instagram.com"
+        aria-current={false}
+        className="c7"
+        href="/team"
+        onClick={[Function]}
+        style={undefined}
       >
-         I
+         Our Team 
+      </a>
+      <a
+        aria-current={false}
+        className="c7"
+        href="/gallery"
+        onClick={[Function]}
+        style={undefined}
+      >
+         Gallery 
+      </a>
+      <a
+        aria-current={false}
+        className="c7"
+        href="/#contact"
+        onClick={[Function]}
+        style={undefined}
+      >
+         Contact 
       </a>
     </div>
-  </h1>
-  <div
-    className="c5"
-  >
-    <a
-      aria-current="true"
-      className="c6 active"
-      href="/"
-      onClick={[Function]}
-      style={Object {}}
+    <div
+      className="c8"
     >
-       Home 
-    </a>
-    <a
-      aria-current={false}
-      className="c6"
-      href="/services"
-      onClick={[Function]}
-      style={undefined}
-    >
-       Service & Prices 
-    </a>
-    <a
-      aria-current={false}
-      className="c6"
-      href="/team"
-      onClick={[Function]}
-      style={undefined}
-    >
-       Our Team 
-    </a>
-    <a
-      aria-current={false}
-      className="c6"
-      href="/gallery"
-      onClick={[Function]}
-      style={undefined}
-    >
-       Gallery 
-    </a>
-    <a
-      aria-current={false}
-      className="c6"
-      href="/#contact"
-      onClick={[Function]}
-      style={undefined}
-    >
-       Contact 
-    </a>
-  </div>
-  <div
-    className="c7"
-  >
-    <div>
-      <img
-        className="c8"
-        src="http://localhost:3000/venue-image.jpeg"
-      />
-      <div
-        className="c9"
-      >
-        Sarah Snips is a hairdressers and salon based in Marylebone, London. We offer a range of hair services from experienced professionals to help you achieve your perfect style, as well as a selection of beauty treatments to add that finishing touch.
-      </div>
       <div>
-        <h3
-          className="c10"
-        >
-          Products we use
-        </h3>
-        <ul
-          className="c11"
-        >
-          <li
-            className="c12"
-          >
-            <img
-              className="c13"
-              src="http://localhost:3000/p1.png"
-            />
-          </li>
-          <li
-            className="c12"
-          >
-            <img
-              className="c13"
-              src="http://localhost:3000/p2.png"
-            />
-          </li>
-          <li
-            className="c12"
-          >
-            <img
-              className="c13"
-              src="http://localhost:3000/p3.png"
-            />
-          </li>
-          <li
-            className="c12"
-          >
-            <img
-              className="c13"
-              src="http://localhost:3000/p4.png"
-            />
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3
-          className="c10"
-        >
-          Contact
-        </h3>
+        <img
+          className="c9"
+          src="http://localhost:3000/venue-image.jpeg"
+        />
         <div
-          className="c14"
+          className="c10"
         >
+          Sarah Snips is a hairdressers and salon based in Marylebone, London. We offer a range of hair services from experienced professionals to help you achieve your perfect style, as well as a selection of beauty treatments to add that finishing touch.
+        </div>
+        <div>
+          <h3
+            className="c11"
+          >
+            Products we use
+          </h3>
+          <ul
+            className="c12"
+          >
+            <li
+              className="c13"
+            >
+              <img
+                className="c14"
+                src="http://localhost:3000/p1.png"
+              />
+            </li>
+            <li
+              className="c13"
+            >
+              <img
+                className="c14"
+                src="http://localhost:3000/p2.png"
+              />
+            </li>
+            <li
+              className="c13"
+            >
+              <img
+                className="c14"
+                src="http://localhost:3000/p3.png"
+              />
+            </li>
+            <li
+              className="c13"
+            >
+              <img
+                className="c14"
+                src="http://localhost:3000/p4.png"
+              />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3
+            className="c11"
+          >
+            Contact
+          </h3>
           <div
             className="c15"
           >
-            <div>
-              <div
-                className=""
-              >
-                Address
-              </div>
-              <div
-                className=""
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "38a Lea Bridge Road <br> London <br> E5 9QD <br> W1T 3PE",
+            <div
+              className="c16"
+            >
+              <div>
+                <div
+                  className=""
+                >
+                  Address
+                </div>
+                <div
+                  className=""
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "38a Lea Bridge Road <br> London <br> E5 9QD <br> W1T 3PE",
+                    }
                   }
-                }
-              />
-            </div>
-            <div>
-              <div
-                className=""
-              >
-                Phone
+                />
               </div>
-              <div
-                className=""
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "020 7123 4567",
+              <div>
+                <div
+                  className=""
+                >
+                  Phone
+                </div>
+                <div
+                  className=""
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "020 7123 4567",
+                    }
                   }
-                }
-              />
-            </div>
-            <div>
-              <div
-                className=""
-              >
-                Email
+                />
               </div>
-              <div
-                className=""
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "test@treatwell.co.uk",
+              <div>
+                <div
+                  className=""
+                >
+                  Email
+                </div>
+                <div
+                  className=""
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "test@treatwell.co.uk",
+                    }
                   }
-                }
-              />
+                />
+              </div>
             </div>
+            <ul
+              className="c17"
+            >
+              <li
+                className="c18"
+                open={true}
+              >
+                <span
+                  className=""
+                >
+                  Monday
+                </span>
+                <span
+                  className=""
+                >
+                  08:00 - 22:00
+                </span>
+              </li>
+              <li
+                className="c18"
+                open={true}
+              >
+                <span
+                  className=""
+                >
+                  Tuesday
+                </span>
+                <span
+                  className=""
+                >
+                  08:00 - 22:00
+                </span>
+              </li>
+              <li
+                className="c18"
+                open={true}
+              >
+                <span
+                  className=""
+                >
+                  Thrusday
+                </span>
+                <span
+                  className=""
+                >
+                  08:00 - 22:00
+                </span>
+              </li>
+              <li
+                className="c18"
+                open={true}
+              >
+                <span
+                  className=""
+                >
+                  Wendnesday
+                </span>
+                <span
+                  className=""
+                >
+                  08:00 - 22:00
+                </span>
+              </li>
+              <li
+                className="c18"
+                open={true}
+              >
+                <span
+                  className=""
+                >
+                  Friday
+                </span>
+                <span
+                  className=""
+                >
+                  08:00 - 22:00
+                </span>
+              </li>
+              <li
+                className="c19"
+                open={false}
+              >
+                <span
+                  className=""
+                >
+                  Saturday
+                </span>
+                <span
+                  className=""
+                >
+                  08:00 - 22:00
+                </span>
+              </li>
+              <li
+                className="c19"
+                open={false}
+              >
+                <span
+                  className=""
+                >
+                  Sunday
+                </span>
+                <span
+                  className=""
+                >
+                  08:00 - 22:00
+                </span>
+              </li>
+            </ul>
           </div>
-          <ul
-            className="c16"
-          >
-            <li
-              className="c17"
-              open={true}
-            >
-              <span
-                className=""
-              >
-                Monday
-              </span>
-              <span
-                className=""
-              >
-                08:00 - 22:00
-              </span>
-            </li>
-            <li
-              className="c17"
-              open={true}
-            >
-              <span
-                className=""
-              >
-                Tuesday
-              </span>
-              <span
-                className=""
-              >
-                08:00 - 22:00
-              </span>
-            </li>
-            <li
-              className="c17"
-              open={true}
-            >
-              <span
-                className=""
-              >
-                Thrusday
-              </span>
-              <span
-                className=""
-              >
-                08:00 - 22:00
-              </span>
-            </li>
-            <li
-              className="c17"
-              open={true}
-            >
-              <span
-                className=""
-              >
-                Wendnesday
-              </span>
-              <span
-                className=""
-              >
-                08:00 - 22:00
-              </span>
-            </li>
-            <li
-              className="c17"
-              open={true}
-            >
-              <span
-                className=""
-              >
-                Friday
-              </span>
-              <span
-                className=""
-              >
-                08:00 - 22:00
-              </span>
-            </li>
-            <li
-              className="c18"
-              open={false}
-            >
-              <span
-                className=""
-              >
-                Saturday
-              </span>
-              <span
-                className=""
-              >
-                08:00 - 22:00
-              </span>
-            </li>
-            <li
-              className="c18"
-              open={false}
-            >
-              <span
-                className=""
-              >
-                Sunday
-              </span>
-              <span
-                className=""
-              >
-                08:00 - 22:00
-              </span>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
   </div>
   <footer
-    className="c19"
+    className="c20"
   >
     Footer
   </footer>

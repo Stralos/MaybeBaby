@@ -9,13 +9,16 @@ import Services from '../Services';
 import type { Props } from '../Services';
 
 
-const getProps = (): Props => ({
-  services: [],
-});
-
 describe('Services Component -- ', () => {
+  let props: Props;
+
+  beforeEach(() => {
+    props = {
+      services: [],
+    };
+  });
+
   it('should have an header', () => {
-    const props = getProps();
     const wrapper = shallow(<Services {...props} />);
     const headerDOM = wrapper.find(H3);
 
