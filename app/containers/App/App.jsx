@@ -21,13 +21,14 @@ export type Props = {
 const AppContent = styled.div`
   margin: 0 auto;
   max-width: 980px;
+  width: 100%;
 `;
 
 const AppStyled = styled.div`
   min-height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `;
 
 const activeClassName = 'active';
