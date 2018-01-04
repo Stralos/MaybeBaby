@@ -79,6 +79,17 @@ const data = {
       productName: 'Hairwash & Finish with Olaplex Conditioning Treatment',
     }],
   }],
+  employees: [{
+    name: 'James Smith',
+    image: '',
+    description: 'He is a cool dude',
+    profession: 'Hair dresser',
+  }, {
+    name: 'Alex Cameron Smith',
+    image: '',
+    description: 'Cuts Hair like a pro',
+    profession: 'Hair dresser',
+  }],
 };
 
 export default data;

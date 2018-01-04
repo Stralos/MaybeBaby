@@ -8,6 +8,7 @@ import Nav from 'components/Nav';
 import SocialMediaIcon from 'components/SocialMediaIcon';
 import Home from 'containers/Home';
 import Services from 'containers/Services';
+import Team from 'containers/Team';
 
 export type Props = {
   +venueName: string,
@@ -167,6 +168,7 @@ class App extends PureComponent<Props> {
             <Switch>
               <Route exact path={ROUTES.HOME} component={Home} />
               <Route exact path={ROUTES.SERVICES} component={Services} />
+              <Route exact path={ROUTES.TEAM} component={Team} />
             </Switch>
           </RouteContent>
         </AppContent>
