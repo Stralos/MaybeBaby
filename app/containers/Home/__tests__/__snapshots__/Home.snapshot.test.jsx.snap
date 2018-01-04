@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Snapshot--  should renders correctly 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  font-family: 'Marcellus SC';
+}
+
+.c9 {
+  padding-left: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 28.8px;
+}
+
+.c9:before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.c10 {
+  padding-left: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 28.8px;
+}
+
+.c10:before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.c1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.c3 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin: 0px -12px 40px -12px;
+}
+
+.c4 {
+  height: 101px;
+  background-color: #f2f2f2;
+  list-style-type: none;
+  margin: 0 12px 0 12px;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  max-width: calc(100% - 30px);
+  max-height: calc(100% - 26px);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.c8 li {
+  margin: 2px 0;
+}
+
+.c0 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+<div>
+  <img
+    className="c0"
+    src="www.images.com/venueImage.jpg"
+  />
+  <div
+    className="c1"
+  >
+    This is the best venue Ever!
+  </div>
+  <div>
+    <h3
+      className="c2"
+    >
+      Products we use
+    </h3>
+    <ul
+      className="c3"
+    >
+      <li
+        className="c4"
+      >
+        <img
+          className="c5"
+          src="www.images.com/shampoon.jpg"
+        />
+      </li>
+      <li
+        className="c4"
+      >
+        <img
+          className="c5"
+          src="www.images.com/soap.jpg"
+        />
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h3
+      className="c2"
+    >
+      Contact
+    </h3>
+    <div
+      className="c6"
+    >
+      <div
+        className="c7"
+      >
+        <div>
+          <div
+            className=""
+          >
+            Address
+          </div>
+          <div
+            className=""
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "England London Main Street 13",
+              }
+            }
+          />
+        </div>
+        <div>
+          <div
+            className=""
+          >
+            Phone
+          </div>
+          <div
+            className=""
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "+88 2349 83921",
+              }
+            }
+          />
+        </div>
+        <div>
+          <div
+            className=""
+          >
+            Email
+          </div>
+          <div
+            className=""
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "awesomeVenue@gmail.com",
+              }
+            }
+          />
+        </div>
+      </div>
+      <ul
+        className="c8"
+      >
+        <li
+          className="c9"
+          open={false}
+        >
+          <span
+            className=""
+          >
+            Monday
+          </span>
+          <span
+            className=""
+          >
+            08:00 - 18:00
+          </span>
+        </li>
+        <li
+          className="c10"
+          open={true}
+        >
+          <span
+            className=""
+          >
+            Tuesday
+          </span>
+          <span
+            className=""
+          >
+            10:00 - 20:00
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

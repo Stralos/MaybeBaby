@@ -54,8 +54,42 @@ const data = {
     open: false,
     opensAt: '08:00',
     closesAt: '22:00',
-  },
-  ],
+  }],
+  services: [{
+    name: 'Haircuts & Hairdressing',
+    products: [{
+      productName: 'Hairwash & Finish with Olaplex Conditioning Treatment',
+    }, {
+      productName: 'Ladies Wash & Cut',
+    }, {
+      productName: 'Hairwash & Finish',
+    }, {
+      productName: 'Hairwash, Haircut & Finish',
+    }, {
+      productName: 'Hairwash, Haircut & Finish with Olaplex Conditioning Treatment',
+    }],
+  }, {
+    name: 'Keratin/ brazilian blow dry',
+    products: [{
+      productName: 'Hairwash & Finish with Olaplex Conditioning Treatment',
+    }],
+  }, {
+    name: 'Hair Colouring & Highlights',
+    products: [{
+      productName: 'Hairwash & Finish with Olaplex Conditioning Treatment',
+    }],
+  }],
+  employees: [{
+    name: 'James Smith',
+    image: '',
+    description: 'He is a cool dude',
+    profession: 'Hair dresser',
+  }, {
+    name: 'Alex Cameron Smith',
+    image: '',
+    description: 'Cuts Hair like a pro',
+    profession: 'Hair dresser',
+  }],
 };
 
 export default data;

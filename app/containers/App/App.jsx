@@ -7,6 +7,8 @@ import ROUTES from 'utils/routes';
 import Nav from 'components/Nav';
 import SocialMediaIcon from 'components/SocialMediaIcon';
 import Home from 'containers/Home';
+import Services from 'containers/Services';
+import Team from 'containers/Team';
 
 export type Props = {
   +venueName: string,
@@ -17,13 +19,17 @@ export type Props = {
   },
 }
 
-const AppStyled = styled.div`
-  min-height: 100%;
+const AppContent = styled.div`
   margin: 0 auto;
   max-width: 980px;
   width: 100%;
+`;
+
+const AppStyled = styled.div`
+  min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `;
 
 const activeClassName = 'active';
@@ -79,6 +85,7 @@ const RouteContent = styled.div`
   flex: 1;
 `;
 const Footer = styled.footer`
+  margin-top: 40px;
   background: #222;
   padding: 32px 0;
 `;
@@ -101,12 +108,16 @@ class App extends PureComponent<Props> {
         background-color: #333; 
         color: #ccc;
         font-family: 'Gentium Basic';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.8;
       }
     `;
     // eslint-disable-next-line no-unused-expressions
     injectGlobal`${globalStyles}`;
   }
   injectHtmlHead = () => {
+    const { venueName } = this.props;
     const noIndexTag = () => {
       return (
         <Helmet>
@@ -117,7 +128,7 @@ class App extends PureComponent<Props> {
     return (
       <Fragment>
         <Helmet>
-          <title> Test </title>
+          <title> {venueName} </title>
         </Helmet>
         <Switch>
           <Route exact path={ROUTES.HOME} />
@@ -137,26 +148,30 @@ class App extends PureComponent<Props> {
     return (
       <AppStyled>
         {this.injectHtmlHead()}
-        <Header>
-          <VenueName to={ROUTES.HOME}> {venueName} </VenueName>
-          <SocialMedia>
-            <SocialMediaIcon href={facebook}> F </SocialMediaIcon>
-            <SocialMediaIcon href={twitter}> T</SocialMediaIcon>
-            <SocialMediaIcon href={instagram}> I</SocialMediaIcon>
-          </SocialMedia>
-        </Header>
-        <Nav>
-          <StyledNavLink exact to={ROUTES.HOME}> Home </StyledNavLink>
-          <StyledNavLink exact to={ROUTES.SERVICES}> Service & Prices </StyledNavLink>
-          <StyledNavLink exact to={ROUTES.TEAM}> Our Team </StyledNavLink>
-          <StyledNavLink exact to={ROUTES.GALLERY}> Gallery </StyledNavLink>
-          <StyledNavLink exact to={ROUTES.CONTACT}> Contact </StyledNavLink>
-        </Nav>
-        <RouteContent>
-          <Switch>
-            <Route exact path={ROUTES.HOME} component={Home} />
-          </Switch>
-        </RouteContent>
+        <AppContent>
+          <Header>
+            <VenueName to={ROUTES.HOME}> {venueName} </VenueName>
+            <SocialMedia>
+              <SocialMediaIcon href={facebook}> F </SocialMediaIcon>
+              <SocialMediaIcon href={twitter}> T</SocialMediaIcon>
+              <SocialMediaIcon href={instagram}> I</SocialMediaIcon>
+            </SocialMedia>
+          </Header>
+          <Nav>
+            <StyledNavLink exact to={ROUTES.HOME}> Home </StyledNavLink>
+            <StyledNavLink exact to={ROUTES.SERVICES}> Service & Prices </StyledNavLink>
+            <StyledNavLink exact to={ROUTES.TEAM}> Our Team </StyledNavLink>
+            <StyledNavLink exact to={ROUTES.GALLERY}> Gallery </StyledNavLink>
+            <StyledNavLink exact to={ROUTES.CONTACT}> Contact </StyledNavLink>
+          </Nav>
+          <RouteContent>
+            <Switch>
+              <Route exact path={ROUTES.HOME} component={Home} />
+              <Route exact path={ROUTES.SERVICES} component={Services} />
+              <Route exact path={ROUTES.TEAM} component={Team} />
+            </Switch>
+          </RouteContent>
+        </AppContent>
         <Footer>
           Footer
         </Footer>

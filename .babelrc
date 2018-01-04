@@ -13,7 +13,8 @@
       "alias": {
         "components": "./components",
         "containers": "./containers",
-        "utils": "./utils"
+        "utils": "./utils",
+        "selectors": "./selectors"
       }
     }]
   ]
