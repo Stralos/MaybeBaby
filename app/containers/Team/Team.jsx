@@ -16,8 +16,9 @@ export type Props = {
 class Team extends PureComponent<Props> {
   renderEmployees = () => {
     const { employees } = this.props;
+
     return employees
-      .map(employee => <TeamMember {...employee} />);
+      .map(employee => <TeamMember key={employee.name} {...employee} />);
   }
 
   render = () => {

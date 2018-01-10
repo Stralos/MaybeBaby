@@ -2,15 +2,45 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
+const TeamMemberStyled = styled.div`
+  display: flex;
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+`;
+export const Profile = styled.div`
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+`;
 export const Profession = styled.div`
 `;
 export const Description = styled.div`
 `;
 export const Name = styled.div`
+  font-family: "Marcellus SC";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
 `;
 export const Image = styled.img`
 `;
+
+const INITIALS_SIZE = '120px';
 export const Initials = styled.div`
+  font-size: 2.25em;
+  color: #d9d9d9;
+  font-family: "Playfair Display",serif;
+  border-radius: 50%;
+  height: ${INITIALS_SIZE};
+  width: ${INITIALS_SIZE};
+  min-width: ${INITIALS_SIZE};
+  min-height: ${INITIALS_SIZE};
+  background-color: #777;
+  line-height: ${INITIALS_SIZE};
+  text-align: center;
 `;
 
 export type Props = {
@@ -40,9 +70,9 @@ class TeamMember extends PureComponent<Props> {
       profession,
     } = this.props;
     return (
-      <div>
+      <TeamMemberStyled>
         {this.renderImage()}
-        <div>
+        <Profile>
           <Name>
             {name}
           </Name>
@@ -56,8 +86,8 @@ class TeamMember extends PureComponent<Props> {
               {profession}
             </Profession>
           )}
-        </div>
-      </div>
+        </Profile>
+      </TeamMemberStyled>
     );
   };
 }

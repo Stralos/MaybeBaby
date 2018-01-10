@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App Component Snapshot--  should renders correctly home page 1`] = `
+exports[`App Component Snapshot should renders correctly home page 1`] = `
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22,164 +22,6 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   width: 24px;
   display: inline-block;
   color: white;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  margin-bottom: 24px;
-  font-family: 'Marcellus SC';
-}
-
-.c18 {
-  padding-left: 40px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  line-height: 28.8px;
-}
-
-.c18:before {
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  content: '';
-  border-radius: 50%;
-  border: 1px solid white;
-  box-sizing: border-box;
-  background-color: white;
-}
-
-.c19 {
-  padding-left: 40px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  line-height: 28.8px;
-}
-
-.c19:before {
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  content: '';
-  border-radius: 50%;
-  border: 1px solid white;
-  box-sizing: border-box;
-  background-color: transparent;
-}
-
-.c10 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.c12 {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  margin: 0px -12px 40px -12px;
-}
-
-.c13 {
-  height: 101px;
-  background-color: #f2f2f2;
-  list-style-type: none;
-  margin: 0 12px 0 12px;
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c14 {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  max-width: calc(100% - 30px);
-  max-height: calc(100% - 26px);
-}
-
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
-.c17 li {
-  margin: 2px 0;
-}
-
-.c9 {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 .c1 {
@@ -267,7 +109,7 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
   flex: 1;
 }
 
-.c20 {
+.c9 {
   margin-top: 40px;
   background: #222;
   padding: 32px 0;
@@ -290,7 +132,7 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
         style={Object {}}
       >
          
-        Sarah's Day Spa
+        Hair & Beauty
          
       </a>
       <div
@@ -298,19 +140,19 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
       >
         <a
           className="c5"
-          href="http://www.facebook.com"
+          href="www.facebook.com/hair&beauty"
         >
            F 
         </a>
         <a
           className="c5"
-          href="http://twitter.com"
+          href="www.twitter.com/hair&beauty"
         >
            T
         </a>
         <a
           className="c5"
-          href="http://www.instagram.com"
+          href="www.instagram.com/hair&beauty"
         >
            I
         </a>
@@ -368,233 +210,11 @@ exports[`App Component Snapshot--  should renders correctly home page 1`] = `
     <div
       className="c8"
     >
-      <div>
-        <img
-          className="c9"
-          src="http://localhost:3000/venue-image.jpeg"
-        />
-        <div
-          className="c10"
-        >
-          Sarah Snips is a hairdressers and salon based in Marylebone, London. We offer a range of hair services from experienced professionals to help you achieve your perfect style, as well as a selection of beauty treatments to add that finishing touch.
-        </div>
-        <div>
-          <h3
-            className="c11"
-          >
-            Products we use
-          </h3>
-          <ul
-            className="c12"
-          >
-            <li
-              className="c13"
-            >
-              <img
-                className="c14"
-                src="http://localhost:3000/p1.png"
-              />
-            </li>
-            <li
-              className="c13"
-            >
-              <img
-                className="c14"
-                src="http://localhost:3000/p2.png"
-              />
-            </li>
-            <li
-              className="c13"
-            >
-              <img
-                className="c14"
-                src="http://localhost:3000/p3.png"
-              />
-            </li>
-            <li
-              className="c13"
-            >
-              <img
-                className="c14"
-                src="http://localhost:3000/p4.png"
-              />
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3
-            className="c11"
-          >
-            Contact
-          </h3>
-          <div
-            className="c15"
-          >
-            <div
-              className="c16"
-            >
-              <div>
-                <div
-                  className=""
-                >
-                  Address
-                </div>
-                <div
-                  className=""
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "38a Lea Bridge Road <br> London <br> E5 9QD <br> W1T 3PE",
-                    }
-                  }
-                />
-              </div>
-              <div>
-                <div
-                  className=""
-                >
-                  Phone
-                </div>
-                <div
-                  className=""
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "020 7123 4567",
-                    }
-                  }
-                />
-              </div>
-              <div>
-                <div
-                  className=""
-                >
-                  Email
-                </div>
-                <div
-                  className=""
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "test@treatwell.co.uk",
-                    }
-                  }
-                />
-              </div>
-            </div>
-            <ul
-              className="c17"
-            >
-              <li
-                className="c18"
-                open={true}
-              >
-                <span
-                  className=""
-                >
-                  Monday
-                </span>
-                <span
-                  className=""
-                >
-                  08:00 - 22:00
-                </span>
-              </li>
-              <li
-                className="c18"
-                open={true}
-              >
-                <span
-                  className=""
-                >
-                  Tuesday
-                </span>
-                <span
-                  className=""
-                >
-                  08:00 - 22:00
-                </span>
-              </li>
-              <li
-                className="c18"
-                open={true}
-              >
-                <span
-                  className=""
-                >
-                  Thrusday
-                </span>
-                <span
-                  className=""
-                >
-                  08:00 - 22:00
-                </span>
-              </li>
-              <li
-                className="c18"
-                open={true}
-              >
-                <span
-                  className=""
-                >
-                  Wendnesday
-                </span>
-                <span
-                  className=""
-                >
-                  08:00 - 22:00
-                </span>
-              </li>
-              <li
-                className="c18"
-                open={true}
-              >
-                <span
-                  className=""
-                >
-                  Friday
-                </span>
-                <span
-                  className=""
-                >
-                  08:00 - 22:00
-                </span>
-              </li>
-              <li
-                className="c19"
-                open={false}
-              >
-                <span
-                  className=""
-                >
-                  Saturday
-                </span>
-                <span
-                  className=""
-                >
-                  08:00 - 22:00
-                </span>
-              </li>
-              <li
-                className="c19"
-                open={false}
-              >
-                <span
-                  className=""
-                >
-                  Sunday
-                </span>
-                <span
-                  className=""
-                >
-                  08:00 - 22:00
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      &lt;Home /&gt;
     </div>
   </div>
   <footer
-    className="c20"
+    className="c9"
   >
     Footer
   </footer>
