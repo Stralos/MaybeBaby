@@ -1,4 +1,5 @@
-const data = {
+// @flow
+const data: State = {
   phone: '020 7123 4567',
   address: '38a Lea Bridge Road <br> London <br> E5 9QD <br> W1T 3PE',
   email: 'test@treatwell.co.uk',

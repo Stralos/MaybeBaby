@@ -6,7 +6,7 @@ import { employeesWithInitialsSelector } from 'selectors/employeeInitials';
 import Team from './Team';
 import type { Props } from './Team';
 
-const mapSateToProps = (state) => {
+const mapSateToProps = (state: State) => {
   return Object.assign({}, {
     employees: employeesWithInitialsSelector(state),
   });

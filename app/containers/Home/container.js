@@ -6,9 +6,7 @@ import type { Connector } from 'react-redux';
 import Home from './Home';
 import type { Props } from './Home';
 
-const mapSateToProps = state => Object.assign({}, {
-  greeting: state.greeting,
-  date: state.date,
+const mapSateToProps = (state: State) => Object.assign({}, {
   products: state.products,
   workingHours: state.workingHours,
   address: state.address,
