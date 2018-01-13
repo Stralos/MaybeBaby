@@ -26,6 +26,9 @@ describe('employeeInitialsSelector selector ', () => {
     const state = {
       employees: [{
         name: 'James Smith',
+        image: '',
+        description: 'Likes to talk',
+        profession: 'Hair Dresser',
       }],
     };
     const result = employeeSelector(state);
@@ -37,9 +40,13 @@ describe('employeeInitialsSelector selector ', () => {
       employees: [{
         name: 'James Smith',
         initials: '',
+        description: 'Likes to talk',
+        profession: 'Hair Dresser',
       }, {
         name: 'Alex Cameron Jaden',
         initials: '',
+        description: 'Has strong perfume',
+        profession: 'Hair Dresser',
       }],
     };
     const result = employeesWithInitialsSelector(state);

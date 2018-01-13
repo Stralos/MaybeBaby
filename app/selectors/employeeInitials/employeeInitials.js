@@ -1,7 +1,9 @@
 // @flow
 import { createSelector } from 'reselect';
+import type { Selector } from 'reselect';
 
-export const employeeSelector = (state: any): any => state.employees;
+export const employeeSelector =
+  (state: EmployeeState): Array<Employee> => state.employees;
 
 export const employeeInitialsSelector = (employee: { name: string }): string => {
   return employee.name
@@ -12,10 +14,13 @@ export const employeeInitialsSelector = (employee: { name: string }): string => 
     .substr(0, 2);
 };
 
-export const employeesWithInitialsSelector = createSelector(
+export const employeesWithInitialsSelector:
+  Selector<EmployeeState, *, Array<EmployeeWithInitials>>
+= createSelector(
   [employeeSelector],
-  (employees: any): any => {
-    return employees.map(employee => Object.assign({}, employee, {
+  (employees: Array<Employee>): Array<EmployeeWithInitials> => {
+    return employees.map(employee => ({
+      ...employee,
       initials: employeeInitialsSelector(employee),
     }));
   },
