@@ -11,7 +11,6 @@ const base = {
   },
   module: {
     rules: [
-      /*
       {
         enforce: 'pre',
         test: /.jsx?$/,
@@ -22,7 +21,6 @@ const base = {
           failOnError: false,
         },
       },
-      */
       {
         test: /.jsx?$/,
         loader: 'babel-loader',

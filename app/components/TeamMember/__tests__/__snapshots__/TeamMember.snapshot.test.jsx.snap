@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamMember Component Snapshot it should render correctly with an image 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  font-family: "Marcellus SC";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+<div
+  className="c0"
+>
+  <img
+    className=""
+    src="www.james-smith.com/image/me.jpg"
+  />
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      James Smith
+    </div>
+    <div
+      className=""
+    >
+      Likes to talk a lot
+    </div>
+    <div
+      className=""
+    >
+      Hair Dresser
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TeamMember Component Snapshot should not render description 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  font-family: "Marcellus SC";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+<div
+  className="c0"
+>
+  <img
+    className=""
+    src="www.james-smith.com/image/me.jpg"
+  />
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      James Smith
+    </div>
+    <div
+      className=""
+    >
+      Hair Dresser
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TeamMember Component Snapshot should not render profession 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  font-family: "Marcellus SC";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+<div
+  className="c0"
+>
+  <img
+    className=""
+    src="www.james-smith.com/image/me.jpg"
+  />
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      James Smith
+    </div>
+    <div
+      className=""
+    >
+      Likes to talk a lot
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TeamMember Component Snapshot should render correctly with initials 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.c0:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c3 {
+  font-family: "Marcellus SC";
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.c1 {
+  font-size: 2.25em;
+  color: #d9d9d9;
+  font-family: "Playfair Display",serif;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  background-color: #777;
+  line-height: 120px;
+  text-align: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    JS
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      James Smith
+    </div>
+    <div
+      className=""
+    >
+      Likes to talk a lot
+    </div>
+    <div
+      className=""
+    >
+      Hair Dresser
+    </div>
+  </div>
+</div>
+`;
