@@ -18,6 +18,9 @@ export const Profile = styled.div`
 export const Profession = styled.div`
 `;
 export const Description = styled.div`
+  font-family: "Marcellus SC",serif;
+  font-size: 1.2em;
+  color: #999;
 `;
 export const Name = styled.div`
   font-family: "Marcellus SC";
@@ -52,13 +55,9 @@ export type Props = {
 }
 
 class TeamMember extends PureComponent<Props> {
-  isNotNullOrEmpty = (prop: ?string): boolean => {
-    return !!prop;
-  }
-
   renderImage = () => {
     const { image, initials } = this.props;
-    return this.isNotNullOrEmpty(image) ?
+    return image ?
       <Image src={image} /> :
       <Initials>{initials}</Initials>;
   }
@@ -76,12 +75,12 @@ class TeamMember extends PureComponent<Props> {
           <Name>
             {name}
           </Name>
-          {this.isNotNullOrEmpty(description) && (
+          {description && (
             <Description>
               {description}
             </Description>
           )}
-          {this.isNotNullOrEmpty(profession) && (
+          {profession && (
             <Profession>
               {profession}
             </Profession>

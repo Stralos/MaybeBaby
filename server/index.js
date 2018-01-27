@@ -4,6 +4,7 @@
 /* eslint no-console: 0 */
 
 import express from 'express';
+import type { $Request, $Response, $Application } from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
@@ -14,10 +15,10 @@ import App from 'containers/App';
 import renderFullPage from './utils/renderFullPage';
 import data from '../app/placeholderStore';
 
-const app: express$Application = express();
+const app: $Application = express();
 
 app.use(express.static('dist'));
-app.get('/*', (request: express$Request, response: express$Response) => {
+app.get('/*', (request: $Request, response: $Response) => {
   const store = createStore(state => state, data);
   const theme = {
     color: 'white',

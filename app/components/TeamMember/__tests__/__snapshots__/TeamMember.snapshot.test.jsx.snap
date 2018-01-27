@@ -28,6 +28,12 @@ exports[`TeamMember Component Snapshot it should render correctly with an image 
   justify-content: space-between;
 }
 
+.c3 {
+  font-family: "Marcellus SC",serif;
+  font-size: 1.2em;
+  color: #999;
+}
+
 .c2 {
   font-family: "Marcellus SC";
   font-size: 1.75rem;
@@ -51,7 +57,7 @@ exports[`TeamMember Component Snapshot it should render correctly with an image 
       James Smith
     </div>
     <div
-      className=""
+      className="c3"
     >
       Likes to talk a lot
     </div>
@@ -151,6 +157,12 @@ exports[`TeamMember Component Snapshot should not render profession 1`] = `
   justify-content: space-between;
 }
 
+.c3 {
+  font-family: "Marcellus SC",serif;
+  font-size: 1.2em;
+  color: #999;
+}
+
 .c2 {
   font-family: "Marcellus SC";
   font-size: 1.75rem;
@@ -174,7 +186,7 @@ exports[`TeamMember Component Snapshot should not render profession 1`] = `
       James Smith
     </div>
     <div
-      className=""
+      className="c3"
     >
       Likes to talk a lot
     </div>
@@ -208,6 +220,12 @@ exports[`TeamMember Component Snapshot should render correctly with initials 1`]
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c4 {
+  font-family: "Marcellus SC",serif;
+  font-size: 1.2em;
+  color: #999;
 }
 
 .c3 {
@@ -248,7 +266,7 @@ exports[`TeamMember Component Snapshot should render correctly with initials 1`]
       James Smith
     </div>
     <div
-      className=""
+      className="c4"
     >
       Likes to talk a lot
     </div>
