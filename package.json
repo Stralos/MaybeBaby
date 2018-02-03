@@ -8,7 +8,7 @@
     "build:dev": "webpack -d",
     "watch:dev": "npm-run-all --parallel watch:dev:*",
     "watch:dev:build": "webpack -w",
-    "watch:dev:server": "nodemon ./dist/server-bundle.js",
+    "watch:dev:server": "nodemon --inspect ./dist/server-bundle.js",
     "update": "flow-typed install",
     "flow": "flow status",
     "test": "jest",

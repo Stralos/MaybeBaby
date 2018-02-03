@@ -9,6 +9,7 @@ import SocialMediaIcon from 'components/SocialMediaIcon';
 import Home from 'containers/Home';
 import Services from 'containers/Services';
 import Team from 'containers/Team';
+import Gallery from 'containers/Gallery';
 
 export type Props = {
   +venueName: string,
@@ -169,6 +170,7 @@ class App extends PureComponent<Props> {
               <Route exact path={ROUTES.HOME} component={Home} />
               <Route exact path={ROUTES.SERVICES} component={Services} />
               <Route exact path={ROUTES.TEAM} component={Team} />
+              <Route exact path={ROUTES.GALLERY} component={Gallery} />
             </Switch>
           </RouteContent>
         </AppContent>

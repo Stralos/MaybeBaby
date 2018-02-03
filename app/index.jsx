@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { ThemeProvider } from 'styled-components';
+
 import App from 'containers/App';
 
 const preLoadedTheme = window.__PRELOADED_THEME__;

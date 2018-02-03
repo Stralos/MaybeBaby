@@ -1,6 +1,12 @@
 // @flow
 import type { Store as ReduxStore } from 'redux';
 
+declare type VenueImages = {
+  images: Array<{
+    src: string,
+  }>
+}
+
 declare type EmployeeState = {
   employees: Array<Employee>,
 }
@@ -32,6 +38,6 @@ declare type State = {
       +productName: string,
     }>
   }>,
-} & EmployeeState
+} & EmployeeState & VenueImages
 
 export type Store = ReduxStore<State>;

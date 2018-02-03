@@ -91,6 +91,11 @@ const data: State = {
     description: 'Cuts Hair like a pro',
     profession: 'Hair dresser',
   }],
+  images: [{
+    src: '',
+  }, {
+    src: '',
+  }],
 };
 
 export default data;
