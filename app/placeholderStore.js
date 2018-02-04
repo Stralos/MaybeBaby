@@ -92,9 +92,19 @@ const data: State = {
     profession: 'Hair dresser',
   }],
   images: [{
-    src: '',
+    src: 'http://localhost:3000/spa-image-1.jpeg',
   }, {
-    src: '',
+    src: 'http://localhost:3000/spa-image-2.jpeg',
+  }, {
+    src: 'http://localhost:3000/spa-image-3.jpeg',
+  }, {
+    src: 'http://localhost:3000/spa-image-4.jpeg',
+  }, {
+    src: 'http://localhost:3000/spa-image-5.jpeg',
+  }, {
+    src: 'http://localhost:3000/spa-image-6.jpeg',
+  }, {
+    src: 'http://localhost:3000/spa-image-7.jpeg',
   }],
 };
 
