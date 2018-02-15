@@ -4,11 +4,11 @@
   "description": "A React.js + flow + Node.js servers side rendering mini project for learning purposes.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./dist/server-bundle.js",
+    "start": "node .server/build/server-bundle.js",
     "build:dev": "webpack -d",
     "watch:dev": "npm-run-all --parallel watch:dev:*",
     "watch:dev:build": "webpack -w",
-    "watch:dev:server": "nodemon --inspect ./dist/server-bundle.js",
+    "watch:dev:server": "nodemon --inspect ./server/build/server-bundle.js",
     "update": "flow-typed install",
     "flow": "flow status",
     "test": "jest",

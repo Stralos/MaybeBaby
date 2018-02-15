@@ -45,7 +45,7 @@ const serverConfig = {
   target: 'node',
   entry: path.join(__dirname, '/server/index.js'),
   output: {
-    path: path.join(__dirname, '/dist/'),
+    path: path.join(__dirname, '/server/build/'),
     publicPath: path.join(__dirname, '/').replace(/\\/g, '/'),
     filename: 'server-bundle.js',
   },
