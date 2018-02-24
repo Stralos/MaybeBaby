@@ -3,6 +3,8 @@ const path = require('path');
 const FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
 const webpack = require('webpack');
 const webpackNodeExternals = require('webpack-node-externals');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
 
 const base = {
   devtool: 'eval-source-map',
@@ -49,6 +51,15 @@ const serverConfig = {
     publicPath: path.join(__dirname, '/').replace(/\\/g, '/'),
     filename: 'server-bundle.js',
   },
+  plugins: [
+    ...base.plugins,
+    new CopyWebpackPlugin([
+      {
+        from: path.join(__dirname, '/server/assets/'),
+        to: path.join(__dirname, '/dist/'),
+      },
+    ]),
+  ],
   externals: [webpackNodeExternals()],
 };
 
