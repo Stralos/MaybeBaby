@@ -52,12 +52,19 @@ class Gallery extends PureComponent<Props, State> {
   }
 
   onClickNext = () => {
-    const currentImage = this.state.currentImage + 1;
-    this.setState({ currentImage });
+    const { currentImage } = this.state;
+
+    this.setState({
+      currentImage: currentImage + 1,
+    });
   }
 
   onClickPrev = () => {
-    this.setState({ currentImage: this.state.currentImage - 1 });
+    const { currentImage } = this.state;
+
+    this.setState({
+      currentImage: currentImage - 1,
+    });
   }
 
   open = (index: number) => {

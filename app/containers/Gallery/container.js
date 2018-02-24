@@ -5,11 +5,9 @@ import Gallery from './Gallery';
 
 import type { Props } from './Gallery';
 
-const mapSateToProps = (state: State) => {
-  return {
-    images: state.images,
-  };
-};
+const mapSateToProps = (state: State) => Object.assign({}, {
+  images: state.images,
+});
 
 const connector : Connector<{}, Props> = connect(mapSateToProps, {});
 

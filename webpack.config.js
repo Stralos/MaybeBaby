@@ -3,7 +3,7 @@ const path = require('path');
 const FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
 const webpack = require('webpack');
 const webpackNodeExternals = require('webpack-node-externals');
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 const base = {
