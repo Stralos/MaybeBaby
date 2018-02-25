@@ -4,7 +4,7 @@ const data: State = {
   address: '38a Lea Bridge Road <br> London <br> E5 9QD <br> W1T 3PE',
   email: 'test@treatwell.co.uk',
   venueName: 'Sarah\'s Day Spa',
-  image: 'http://localhost:3000/venue-image.jpeg',
+  image: 'http://localhost:3009/venue-image.jpeg',
   socialMedia: {
     facebook: 'http://www.facebook.com',
     instagram: 'http://www.instagram.com',
@@ -12,13 +12,13 @@ const data: State = {
   },
   description: 'Sarah Snips is a hairdressers and salon based in Marylebone, London. We offer a range of hair services from experienced professionals to help you achieve your perfect style, as well as a selection of beauty treatments to add that finishing touch.',
   products: [{
-    image: 'http://localhost:3000/p1.png',
+    image: 'http://localhost:3009/p1.png',
   }, {
-    image: 'http://localhost:3000/p2.png',
+    image: 'http://localhost:3009/p2.png',
   }, {
-    image: 'http://localhost:3000/p3.png',
+    image: 'http://localhost:3009/p3.png',
   }, {
-    image: 'http://localhost:3000/p4.png',
+    image: 'http://localhost:3009/p4.png',
   }],
   workingHours: [{
     day: 'Monday',
@@ -87,24 +87,24 @@ const data: State = {
     profession: 'Hair dresser',
   }, {
     name: 'Alex Cameron Smith',
-    image: '',
+    image: 'http://localhost:3009/alex.png',
     description: 'Cuts Hair like a pro',
     profession: 'Hair dresser',
   }],
   images: [{
-    src: 'http://localhost:3000/spa-image-1.jpeg',
+    src: 'http://localhost:3009/spa-image-1.jpeg',
   }, {
-    src: 'http://localhost:3000/spa-image-2.jpeg',
+    src: 'http://localhost:3009/spa-image-2.jpeg',
   }, {
-    src: 'http://localhost:3000/spa-image-3.jpeg',
+    src: 'http://localhost:3009/spa-image-3.jpeg',
   }, {
-    src: 'http://localhost:3000/spa-image-4.jpeg',
+    src: 'http://localhost:3009/spa-image-4.jpeg',
   }, {
-    src: 'http://localhost:3000/spa-image-5.jpeg',
+    src: 'http://localhost:3009/spa-image-5.jpeg',
   }, {
-    src: 'http://localhost:3000/spa-image-6.jpeg',
+    src: 'http://localhost:3009/spa-image-6.jpeg',
   }, {
-    src: 'http://localhost:3000/spa-image-7.jpeg',
+    src: 'http://localhost:3009/spa-image-7.jpeg',
   }],
 };
 

@@ -52,7 +52,7 @@ app.get('/*', (request: $Request, response: $Response) => {
   }
 });
 
-const PORT = 3000;
+const PORT = 3009;
 
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
