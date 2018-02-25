@@ -28,8 +28,6 @@ export const Name = styled.div`
   font-weight: 500;
   line-height: 1.1;
 `;
-export const Image = styled.img`
-`;
 
 const INITIALS_SIZE = '120px';
 export const Initials = styled.div`
@@ -44,6 +42,11 @@ export const Initials = styled.div`
   background-color: #777;
   line-height: ${INITIALS_SIZE};
   text-align: center;
+`;
+export const Image = styled.img`
+  height: ${INITIALS_SIZE};
+  width: ${INITIALS_SIZE};
+  border-radius: 50%;
 `;
 
 export type Props = {

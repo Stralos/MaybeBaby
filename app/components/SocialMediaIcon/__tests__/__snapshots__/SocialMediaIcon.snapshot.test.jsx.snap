@@ -1,16 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SocialMediaIcon Snapshot Testing -- should render and match snapshot 1`] = `
+exports[`SocialMediaIcon Snapshot Testing should render with Facebook icon 1`] = `
 .c0 {
   text-decoration: none;
   height: 24px;
   width: 24px;
   display: inline-block;
-  background-color: Test;
+  background-image: url(icon-facebook.svg);
 }
 
 <a
   className="c0"
-  type="Test"
+  target="_blank"
+  type="Facebook"
+/>
+`;
+
+exports[`SocialMediaIcon Snapshot Testing should render with Instagram icon 1`] = `
+.c0 {
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-image: url(icon-instagram.svg);
+}
+
+<a
+  className="c0"
+  target="_blank"
+  type="Instagram"
+/>
+`;
+
+exports[`SocialMediaIcon Snapshot Testing should render with Twitter icon 1`] = `
+.c0 {
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-image: url(icon-twitter.svg);
+}
+
+<a
+  className="c0"
+  target="_blank"
+  type="Twitter"
 />
 `;

@@ -13,7 +13,7 @@ exports[`TeamMember Component Snapshot it should render correctly with an image 
   margin-bottom: 0;
 }
 
-.c1 {
+.c2 {
   margin-left: 16px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -28,36 +28,42 @@ exports[`TeamMember Component Snapshot it should render correctly with an image 
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   font-family: "Marcellus SC",serif;
   font-size: 1.2em;
   color: #999;
 }
 
-.c2 {
+.c3 {
   font-family: "Marcellus SC";
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.1;
 }
 
+.c1 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
 <div
   className="c0"
 >
   <img
-    className=""
+    className="c1"
     src="www.james-smith.com/image/me.jpg"
   />
   <div
-    className="c1"
+    className="c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
       James Smith
     </div>
     <div
-      className="c3"
+      className="c4"
     >
       Likes to talk a lot
     </div>
@@ -83,7 +89,7 @@ exports[`TeamMember Component Snapshot should not render description 1`] = `
   margin-bottom: 0;
 }
 
-.c1 {
+.c2 {
   margin-left: 16px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,25 +104,31 @@ exports[`TeamMember Component Snapshot should not render description 1`] = `
   justify-content: space-between;
 }
 
-.c2 {
+.c3 {
   font-family: "Marcellus SC";
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.1;
 }
 
+.c1 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
 <div
   className="c0"
 >
   <img
-    className=""
+    className="c1"
     src="www.james-smith.com/image/me.jpg"
   />
   <div
-    className="c1"
+    className="c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
       James Smith
     </div>
@@ -142,7 +154,7 @@ exports[`TeamMember Component Snapshot should not render profession 1`] = `
   margin-bottom: 0;
 }
 
-.c1 {
+.c2 {
   margin-left: 16px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -157,36 +169,42 @@ exports[`TeamMember Component Snapshot should not render profession 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   font-family: "Marcellus SC",serif;
   font-size: 1.2em;
   color: #999;
 }
 
-.c2 {
+.c3 {
   font-family: "Marcellus SC";
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.1;
 }
 
+.c1 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
 <div
   className="c0"
 >
   <img
-    className=""
+    className="c1"
     src="www.james-smith.com/image/me.jpg"
   />
   <div
-    className="c1"
+    className="c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
       James Smith
     </div>
     <div
-      className="c3"
+      className="c4"
     >
       Likes to talk a lot
     </div>

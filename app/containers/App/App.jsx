@@ -5,7 +5,7 @@ import { Route, NavLink, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import ROUTES from 'utils/routes';
 import Nav from 'components/Nav';
-import SocialMediaIcon from 'components/SocialMediaIcon';
+import SocialMediaIcon, { FACEBOOK, TWITTER, INSTAGRAM } from 'components/SocialMediaIcon';
 import Home from 'containers/Home';
 import Services from 'containers/Services';
 import Team from 'containers/Team';
@@ -153,9 +153,9 @@ class App extends PureComponent<Props> {
           <Header>
             <VenueName to={ROUTES.HOME}> {venueName} </VenueName>
             <SocialMedia>
-              <SocialMediaIcon href={facebook}> F </SocialMediaIcon>
-              <SocialMediaIcon href={twitter}> T</SocialMediaIcon>
-              <SocialMediaIcon href={instagram}> I</SocialMediaIcon>
+              <SocialMediaIcon href={facebook} type={FACEBOOK} />
+              <SocialMediaIcon href={twitter} type={TWITTER} />
+              <SocialMediaIcon href={instagram} type={INSTAGRAM} />
             </SocialMedia>
           </Header>
           <Nav>

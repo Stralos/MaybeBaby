@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App Component Snapshot should renders correctly home page 1`] = `
-.c6 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,6 +21,25 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
   height: 24px;
   width: 24px;
   display: inline-block;
+  background-image: url(icon-facebook.svg);
+  color: white;
+}
+
+.c6 {
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-image: url(icon-twitter.svg);
+  color: white;
+}
+
+.c7 {
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-image: url(icon-instagram.svg);
   color: white;
 }
 
@@ -45,7 +64,7 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
   justify-content: space-between;
 }
 
-.c7 {
+.c9 {
   margin: 0 4px;
   padding: 4px 8px;
   color: #eee;
@@ -59,7 +78,7 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
   text-transform: uppercase;
 }
 
-.c7:hover {
+.c9:hover {
   color: #c8c8c8;
 }
 
@@ -103,13 +122,13 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
   margin: 0 12px;
 }
 
-.c8 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c9 {
+.c11 {
   margin-top: 40px;
   background: #222;
   padding: 32px 0;
@@ -141,29 +160,29 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
         <a
           className="c5"
           href="www.facebook.com/hair&beauty"
-        >
-           F 
-        </a>
+          target="_blank"
+          type="Facebook"
+        />
         <a
-          className="c5"
+          className="c6"
           href="www.twitter.com/hair&beauty"
-        >
-           T
-        </a>
+          target="_blank"
+          type="Twitter"
+        />
         <a
-          className="c5"
+          className="c7"
           href="www.instagram.com/hair&beauty"
-        >
-           I
-        </a>
+          target="_blank"
+          type="Instagram"
+        />
       </div>
     </h1>
     <div
-      className="c6"
+      className="c8"
     >
       <a
         aria-current="true"
-        className="c7 active"
+        className="c9 active"
         href="/"
         onClick={[Function]}
         style={Object {}}
@@ -172,7 +191,7 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
       </a>
       <a
         aria-current={false}
-        className="c7"
+        className="c9"
         href="/services"
         onClick={[Function]}
         style={undefined}
@@ -181,7 +200,7 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
       </a>
       <a
         aria-current={false}
-        className="c7"
+        className="c9"
         href="/team"
         onClick={[Function]}
         style={undefined}
@@ -190,7 +209,7 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
       </a>
       <a
         aria-current={false}
-        className="c7"
+        className="c9"
         href="/gallery"
         onClick={[Function]}
         style={undefined}
@@ -199,7 +218,7 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
       </a>
       <a
         aria-current={false}
-        className="c7"
+        className="c9"
         href="/#contact"
         onClick={[Function]}
         style={undefined}
@@ -208,13 +227,13 @@ exports[`App Component Snapshot should renders correctly home page 1`] = `
       </a>
     </div>
     <div
-      className="c8"
+      className="c10"
     >
       &lt;Home /&gt;
     </div>
   </div>
   <footer
-    className="c9"
+    className="c11"
   >
     Footer
   </footer>
