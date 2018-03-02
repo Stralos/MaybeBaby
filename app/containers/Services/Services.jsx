@@ -18,7 +18,7 @@ export type Props = {
   }>
 }
 
-const Ul = styled.ul`
+export const ProductList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ export const ProductDetails = styled.li`
   padding: 8px 0;
 `;
 
-export const ServicesList = styled(Ul)`
+export const ServicesList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -84,9 +84,9 @@ export default class Services extends PureComponent<Props> {
           <ServiceName>
             { name }
           </ServiceName>
-          <Ul>
+          <ProductList>
             { this.renderProducts(products) }
-          </Ul>
+          </ProductList>
         </Service>
       );
     });

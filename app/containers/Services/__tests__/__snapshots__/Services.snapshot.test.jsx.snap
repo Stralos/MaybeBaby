@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Services Component Snapshot should render a list of services withouth products 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  font-family: 'Marcellus SC';
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.4em;
+  font-family: "Marcellus SC",serif;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div>
+  <h3
+    className="c0"
+  >
+    Services & Prices
+  </h3>
+  <ul
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h4
+        className="c3"
+      >
+        Haircut
+      </h4>
+      <ul
+        className="c4"
+      />
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`Services Component Snapshot should render a list of servises with products 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  font-family: 'Marcellus SC';
+}
+
+.c7 {
+  background: transparent;
+  color: #96d7de;
+  font-family: 'Marcellus SC';
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 1rem;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: spaced-out;
+  -webkit-justify-content: spaced-out;
+  -ms-flex-pack: spaced-out;
+  justify-content: spaced-out;
+  border-bottom: 1px solid #555;
+  box-sizing: border-box;
+  padding: 8px 0;
+}
+
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.4em;
+  font-family: "Marcellus SC",serif;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+}
+
+<div>
+  <h3
+    className="c0"
+  >
+    Services & Prices
+  </h3>
+  <ul
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h4
+        className="c3"
+      >
+        Haircut
+      </h4>
+      <ul
+        className="c4"
+      >
+        <li
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            Short haircut
+          </div>
+          <button
+            className="c7"
+          >
+            Book
+          </button>
+        </li>
+        <li
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            Long haircut
+          </div>
+          <button
+            className="c7"
+          >
+            Book
+          </button>
+        </li>
+      </ul>
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`Services Component Snapshot should renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  font-family: 'Marcellus SC';
+}
+
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+<div>
+  <h3
+    className="c0"
+  >
+    Services & Prices
+  </h3>
+  <ul
+    className="c1"
+  />
+</div>
+`;
