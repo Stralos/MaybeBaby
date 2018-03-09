@@ -14,9 +14,9 @@ import Gallery from 'containers/Gallery';
 export type Props = {
   +venueName: string,
   +socialMedia: {
-    +facebook: string,
-    +instagram: string,
-    +twitter: string,
+    +facebook: ?string,
+    +instagram: ?string,
+    +twitter: ?string,
   },
 }
 
@@ -153,9 +153,15 @@ class App extends PureComponent<Props> {
           <Header>
             <VenueName to={ROUTES.HOME}> {venueName} </VenueName>
             <SocialMedia>
-              <SocialMediaIcon href={facebook} type={FACEBOOK} />
-              <SocialMediaIcon href={twitter} type={TWITTER} />
-              <SocialMediaIcon href={instagram} type={INSTAGRAM} />
+              {facebook && (
+                <SocialMediaIcon href={facebook} type={FACEBOOK} />
+              )}
+              {twitter && (
+                <SocialMediaIcon href={twitter} type={TWITTER} />
+              )}
+              {instagram && (
+                <SocialMediaIcon href={instagram} type={INSTAGRAM} />
+              )}
             </SocialMedia>
           </Header>
           <Nav>
