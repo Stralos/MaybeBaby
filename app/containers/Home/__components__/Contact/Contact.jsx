@@ -2,13 +2,13 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
-export const Lable = styled.div`
+export const Label = styled.div`
 `;
 export const ContactInformation = styled.div`
 `;
 
 export type Props = {
-  lable: string,
+  label: string,
   contactInformation: string
 }
 
@@ -21,12 +21,12 @@ class Contact extends PureComponent<Props> {
   }
 
   render = () => {
-    const { lable } = this.props;
+    const { label } = this.props;
     return (
       <div>
-        <Lable>
-          {lable}
-        </Lable>
+        <Label>
+          {label}
+        </Label>
         <ContactInformation dangerouslySetInnerHTML={this.setContactInformation()} />
       </div>
     );

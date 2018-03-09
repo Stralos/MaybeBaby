@@ -8,8 +8,8 @@ import type { Props } from '../Contact';
 
 const getProps = (): Props => {
   return {
-    lable: '',
-    contactInformation: '',  
+    label: '',
+    contactInformation: '',
   };
 };
 

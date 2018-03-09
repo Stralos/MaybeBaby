@@ -118,9 +118,9 @@ export default class Home extends PureComponent<Props> {
     const { address, email, phone } = this.props;
     return (
       <ContactDetails>
-        <Address lable="Address" contactInformation={address} />
-        <Phone lable="Phone" contactInformation={phone} />
-        <Email lable="Email" contactInformation={email} />
+        <Address label="Address" contactInformation={address} />
+        <Phone label="Phone" contactInformation={phone} />
+        <Email label="Email" contactInformation={email} />
       </ContactDetails>
     );
   }
