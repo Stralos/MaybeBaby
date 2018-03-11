@@ -7,48 +7,28 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 const base = {
-  devtool: 'eval-source-map',
-  resolve: {
-    extensions: ['.js', '.jsx'],
+  entry: {
+    app: './app/index.jsx',
   },
-  module: {
-    rules: [
-      {
-        enforce: 'pre',
-        test: /.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        options: {
-          failOnWarning: false,
-          failOnError: false,
-        },
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name]-[hash].[ext]',
-          publicPath: '/',
-        },
-      },
-      {
-        test: /.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-      },
-    ],
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true,
+    proxy: { '**': 'http://localhost:3009' },
+    /*
+    proxy: {
+      '/api/': 'http://localhost:3001/',
+    },
+    */
   },
   plugins: [
-    new FlowStatusWebpackPlugin({
-      onError: (stdout) => {
-        console.log(stdout);
-      },
-      restartFlow: false,
-      failOnError: true,
-      binaryPath: './node_modules/.bin/flow',
-    }),
-    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
 };
 
 const serverConfig = {
@@ -81,7 +61,4 @@ const clientConfig = {
   },
 };
 
-module.exports = [
-  Object.assign({}, base, serverConfig),
-  Object.assign({}, base, clientConfig),
-];
+module.exports = base;
