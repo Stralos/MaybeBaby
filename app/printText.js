@@ -1,5 +1,5 @@
 const printText = () => {
-  console.log('I work!!!!1111');
+  console.log('I work!!!!');
 };
 
 export default printText;

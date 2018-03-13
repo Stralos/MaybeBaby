@@ -11,8 +11,15 @@ import { createStore } from 'redux';
 import { ThemeProvider } from 'styled-components';
 import App from './containers/App/index';
 */
+import React from 'react';
+import { render } from 'react-dom';
+import { hot } from 'react-hot-loader';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { ThemeProvider } from 'styled-components';
 
-import printText from './printText';
+import Super from 'containers/Super';
+
 // import s from './placeholderStore';
 
 /*
@@ -46,31 +53,40 @@ if (rootDOM) {
 }
 
 */
+/*
+const App = () => {
+  return (
+    <div>
+      Hello world!!!!!
+    </div>
+  );
+};
+debugger
+const Comp = hot(module)(App);
+*/
+const store = createStore(state => state, {});
 
-function component(callback) {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+const App = Super;
 
-  element.innerHTML = ['Hello', 'webpack'].join(' ');
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printText;
-
-  element.appendChild(btn);
-
-  return element;
-}
-
-document.body.appendChild(component(printText));
-
-debugger;
+render(
+  <Provider store={store}>
+    <ThemeProvider theme={{}}>
+      <App />
+    </ThemeProvider>
+  </Provider>,
+  document.getElementById('root'),
+);
+/*
 
 if (module.hot) {
   module.hot.accept('./printText.js', () => {
     debugger;
     console.log('Accepting the updated printMe module!');
-    const updated = require('./printText');
-    updated();
-    document.body.appendChild(component(updated.default));
+    // const updated = require('./printText');
+    printText();
+    document.body.appendChild(component(printText));
   });
 }
+
+*/
