@@ -165,7 +165,7 @@ class App extends PureComponent<Props> {
             </SocialMedia>
           </Header>
           <Nav>
-            <StyledNavLink exact to={ROUTES.HOME}> Home111</StyledNavLink>
+            <StyledNavLink exact to={ROUTES.HOME}> Home </StyledNavLink>
             <StyledNavLink exact to={ROUTES.SERVICES}> Service & Prices </StyledNavLink>
             <StyledNavLink exact to={ROUTES.TEAM}> Our Team </StyledNavLink>
             <StyledNavLink exact to={ROUTES.GALLERY}> Gallery </StyledNavLink>
