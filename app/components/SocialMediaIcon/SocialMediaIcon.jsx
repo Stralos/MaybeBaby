@@ -2,9 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import facebookIcon from './assets/icon-facebook.svg';
-import instagramIcon from './assets/icon-instagram.svg';
-import twitterIcon from './assets/icon-twitter.svg';
+// import facebookIcon from './assets/icon-facebook.svg';
+// import instagramIcon from './assets/icon-instagram.svg';
+// import twitterIcon from './assets/icon-twitter.svg';
 
 type Icon = 'Facebook' | 'Twitter' | 'Instagram';
 type Props = {
@@ -26,11 +26,11 @@ const SocialMediaIcon = styled.a`
   background-image: url(${(props: Props) => {
     switch (props.type) {
       case FACEBOOK:
-        return facebookIcon;
+        return 'facebookIcon';
       case TWITTER:
-        return twitterIcon;
+        return 'twitterIcon';
       case INSTAGRAM:
-        return instagramIcon;
+        return 'instagramIcon';
       default:
         return '';
     }

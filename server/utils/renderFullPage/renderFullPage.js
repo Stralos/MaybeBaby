@@ -26,7 +26,7 @@ export default function renderFullPage(
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
           window.__PRELOADED_THEME__ = ${JSON.stringify(theme).replace(/</g, '\\u003c')}
         </script>
-        <script src="./bundle.js"></script>
+        <script src="./app.bundle.js"></script>
       </body>
     </html>
     `;

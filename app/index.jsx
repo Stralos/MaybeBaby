@@ -11,8 +11,6 @@ import { ThemeProvider } from 'styled-components';
 import App from './containers/App/index';
 import preLoadedState from './placeholderStore';
 
-debugger;
-
 const store = createStore(state => state, preLoadedState);
 
 const rootDOM = document.getElementById('root');
