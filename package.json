@@ -11,8 +11,6 @@
     "dev:run--server": "nodemon ./server/build/server-bundle",
     "dev:run--hot-reload": "webpack-dev-server --config ./webpack/webpack.config.dev-server.js",    
     "build:dev": "webpack -d",
-    "test-server": "node --inspect ./server/test.js",
-    "watch:dev:webpack-server": "webpack-dev-server --config ./webpack/webpack.config.client.js",
     "update": "flow-typed install",
     "flow": "flow status",
     "test": "jest",
