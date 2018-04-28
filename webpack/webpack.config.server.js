@@ -1,9 +1,7 @@
 const base = require('./webpack.config.base');
 const path = require('path');
-const webpack = require('webpack');
 const webpackNodeExternals = require('webpack-node-externals');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-
 
 module.exports = Object.assign({}, base, {
   target: 'node',
@@ -15,14 +13,10 @@ module.exports = Object.assign({}, base, {
   },
   plugins: [
     ...base.plugins,
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: path.join(__dirname, '../server/assets/'),
-        to: path.join(__dirname, '../dist/'),
-      },
-    ]),
+    new CopyWebpackPlugin([{
+      from: path.join(__dirname, '../server/assets/'),
+      to: path.join(__dirname, '../dist/'),
+    }]),
   ],
   externals: [webpackNodeExternals()],
 });

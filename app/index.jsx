@@ -3,7 +3,7 @@
 /* eslint react/jsx-filename-extension: 0 */
 
 import React from 'react';
-import { render } from 'react-dom';
+import { hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -15,7 +15,7 @@ const store = createStore(state => state, preLoadedState);
 
 const rootDOM = document.getElementById('root');
 if (rootDOM) {
-  render(
+  hydrate(
     <BrowserRouter>
       <Provider store={store}>
         <ThemeProvider theme={{}}>

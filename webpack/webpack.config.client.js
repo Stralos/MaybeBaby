@@ -1,22 +1,14 @@
-const base = require('./webpack.config.base');
 const path = require('path');
-const webpack = require('webpack');
+const base = require('./webpack.config.base');
 
-module.exports = Object.assign({}, base, {
+module.exports = Object.assign({}, { ...base }, {
   target: 'web',
-  entry: path.join(__dirname, '../app/index.jsx'),
+  entry: {
+    app: path.join(__dirname, '../app/index.jsx'),
+  },
   output: {
-    path: path.join(__dirname, '../dist/'),
-    publicPath: path.join(__dirname, '/').replace(/\\/g, '/'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
+    path: path.join(__dirname, '../dist'),
   },
-  devServer: {
-    contentBase: '../dist',
-    hot: true,
-    proxy: { '**': 'http://localhost:3009' },
-  },
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+  devtool: 'inline-source-map',
 });

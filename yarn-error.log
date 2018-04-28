@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/paulius/.nvm/versions/node/v8.9.3/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js run watch:dev
+  /Users/paulius/.nvm/versions/node/v8.9.3/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js run dev:hot-reload
 
 PATH: 
-  /Users/paulius/.nvm/versions/node/v8.9.3/bin:/Users/paulius/wahanda/twbox/bin:/Users/paulius/wahanda/gitflow:/Users/paulius/wahanda/sysadmin/aws/bin:/usr/local//maven/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  /Users/paulius/Desktop/Personal Projects/MaybeBaby/node_modules/.bin:/Users/paulius/.config/yarn/link/node_modules/.bin:/Users/paulius/Desktop/Personal Projects/MaybeBaby/node_modules/.bin:/Users/paulius/.config/yarn/link/node_modules/.bin:/Users/paulius/.nvm/versions/node/v8.9.3/lib/node_modules/npm/bin/node-gyp-bin:/Users/paulius/.nvm/versions/node/v8.9.3/bin/node_modules/npm/bin/node-gyp-bin:/Users/paulius/wahanda/gitflow:/Users/paulius/.nvm/versions/node/v8.9.3/bin:/Users/paulius/wahanda/twbox/bin:/Users/paulius/wahanda/gitflow:/Users/paulius/wahanda/sysadmin/aws/bin:/usr/local//maven/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/paulius/wahanda/gitflow:/Users/paulius/wahanda/twbox/bin:/Users/paulius/wahanda/sysadmin/aws/bin:/usr/local//maven/bin
 
 Yarn version: 
   1.3.2
@@ -20,12 +20,29 @@ npm manifest:
     "description": "A React.js + flow + Node.js servers side rendering mini project for learning purposes.",
     "main": "index.js",
     "scripts": {
-      "start": "node .server/build/server-bundle.js",
+      "start": "node ./server/build/server-bundle.js",
+      "dev": "npm-run-all --parallel dev:*",
+      "dev:watch:server": "webpack -w --config ./webpack/webpack.config.server.js",
+      "dev:run:server": "",
+      "dev:watch:client": "",
+      "dev:hot-reload": "",
+  
+  
+  
+  
+  
+  
       "build:dev": "webpack -d",
+      "watch:client-code": "webpack --config ./webpack/webpack.config.client.js -w",
+      "watch:client": "webpack-dev-server --config ./webpack/webpack.config.client.js",
+      "watch:dev-server": "webpack --config ./webpack/webpack.config.server.js -w",
+      "watch:server": "webpack -w --config ./webpack/webpack.config.server.js",
+      "server": "nodemon ./server --exec babel-node",
+      "watch:s": "nodemon ./server/build/server-bundle",
       "watch:dev": "npm-run-all --parallel watch:dev:*",
       "watch:dev:build": "webpack -w",
-      // "watch:dev:server": "nodemon --inspect ./server/build/server-bundle.js",
-      "watch:dev:webpack-server": "webpack-dev-server",
+      "test-server": "node --inspect ./server/test.js",
+      "watch:dev:webpack-server": "webpack-dev-server --config ./webpack/webpack.config.client.js",
       "update": "flow-typed install",
       "flow": "flow status",
       "test": "jest",
@@ -7846,10 +7863,14 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  SyntaxError: /Users/paulius/Desktop/Personal Projects/MaybeBaby/package.json: Unexpected token / in JSON at position 371
-      at JSON.parse (<anonymous>)
-      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:770:59
-      at Generator.next (<anonymous>)
-      at step (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:92:30)
-      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:103:13
-      at <anonymous>
+  TypeError: "file" argument must be a non-empty string
+      at normalizeSpawnArguments (child_process.js:383:11)
+      at Object.exports.spawn (child_process.js:496:38)
+      at default (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:29936:24)
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:29389:28)
+      at queue.push (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:29935:32)
+      at run (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:38604:7)
+      at BlockingQueue.maybePushConcurrencyQueue (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:38619:7)
+      at BlockingQueue.shift (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:38614:10)
+      at default (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:38563:14)
