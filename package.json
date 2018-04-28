@@ -10,21 +10,7 @@
     "dev:watch--client": "webpack -w --config ./webpack/webpack.config.client.js",
     "dev:run--server": "nodemon ./server/build/server-bundle",
     "dev:run--hot-reload": "webpack-dev-server --config ./webpack/webpack.config.dev-server.js",    
-
-
-
-
-
-
     "build:dev": "webpack -d",
-    "watch:client-code": "webpack --config ./webpack/webpack.config.client.js -w",
-    "watch:client": "webpack-dev-server --config ./webpack/webpack.config.client.js",
-    "watch:dev-server": "webpack --config ./webpack/webpack.config.server.js -w",
-    "watch:server": "webpack -w --config ./webpack/webpack.config.server.js",
-    "server": "nodemon ./server --exec babel-node",
-    "watch:s": "nodemon ./server/build/server-bundle",
-    "watch:dev": "npm-run-all --parallel watch:dev:*",
-    "watch:dev:build": "webpack -w",
     "test-server": "node --inspect ./server/test.js",
     "watch:dev:webpack-server": "webpack-dev-server --config ./webpack/webpack.config.client.js",
     "update": "flow-typed install",
